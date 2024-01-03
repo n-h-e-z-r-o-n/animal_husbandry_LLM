@@ -17,28 +17,6 @@ shift_scroll = 0
 grid_widgets = []
 
 
-# =============================== Server Details ======================================================================================================================
-
-
-def connect_to_Server():
-    global client_socket
-    server_domain_name = "inspiring-frost-18221.pktriot.net"
-    server_IP4v_address = socket.gethostbyname(server_domain_name)
-    print("SERVER IP : ", server_IP4v_address)
-    server_IP4v_address = "127.0.0.1"
-    Server_listening_port = 22575  # socket server port number
-    while True:
-        try:
-            client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # instantiate
-            client_socket.connect((server_IP4v_address, Server_listening_port))  # connect to the server
-            client_socket.sendall("USER".encode('utf-8'))
-            break
-        except:
-            pass
-
-threading.Thread(target=connect_to_Server).start()
-
-
 # ----------------------------------------------------------------------------------------------------------------------
 
 def dark_title_bar(window):
@@ -73,13 +51,9 @@ def imagen(image_path, screen_width, screen_height, widget):
     image_thread.start()
 
 def Request_Info(user_query):
+    def start ()
     global VIEW_BOX
     global client_socket
-
-
-
-
-
 
     VIEW_BOX.config(state=tk.NORMAL)
     VIEW_BOX.insert(tk.END,  f"\n{user_query}\n", 'user_config')
