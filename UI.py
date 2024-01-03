@@ -87,13 +87,12 @@ def main():
     app.config(bg=bg_color)
     app.maxsize(950, 700)
     app.minsize(950, 700)
-    app.title('')
-    app.attributes("-toolwindow", 1)
-    app.state()
+    app.title('Lage Laguage Model')
+    #app.attributes("-toolwindow", 1)
     #app.attributes("-topmost", 1)
-    dark_title_bar(app)
     #app.overrideredirect(True)
-   
+    dark_title_bar(app)
+
     # Prevent the window from appearing on the taskbar
 
     on_c = '#2B3230'
