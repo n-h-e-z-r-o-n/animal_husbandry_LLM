@@ -1,3 +1,4 @@
+import time
 import tkinter as tk
 import ctypes as ct
 import threading
@@ -66,6 +67,7 @@ def Request_Info(user_query):
         answer = "ejfioewgewogwegkoewpglewgewgg"
         #answer = RAG.LLM_Run(str(user_query))
 
+        time.sleep(5)
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
@@ -100,7 +102,7 @@ def main():
 
     VIEW_BOX = tk.Text(VIEW_BOX, bg=bg_color, borderwidth=0, border=0, font=( 13))
     VIEW_BOX.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
-    VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT )  # user queries  config's
+    VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5",  justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
