@@ -74,6 +74,8 @@ llm = GradientLLM(
 
 template = """### Instruction: {Instruction} \n\n### Response:"""
 
+def LLM_QURY():
+    PAS
 prompt = PromptTemplate(template=template, input_variables=["Instruction"])
 answer = llm_chain = LLMChain(prompt=prompt, llm=llm)
 print(answer)
