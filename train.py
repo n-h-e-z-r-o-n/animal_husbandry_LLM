@@ -75,12 +75,16 @@ template = """### Instruction: {Instruction} \n\n### Response:"""
 
 
 def LLM_QURY():
+    
+    answer = llm_chain.run(Instruction=question)
+    print(answer)
     pass
 
 
 prompt = PromptTemplate(template=template, input_variables=["Instruction"])
-answer = llm_chain = LLMChain(prompt=prompt, llm=llm)
-Instruction = "Discuss the role of nutrition in animal husbandry"
+llm_chain = LLMChain(prompt=prompt, llm=llm)
 
-llm_chain.run(Instruction=Instruction)
-print(answer)
+
+question  = "Discuss the role of nutrition in animal husbandry"
+
+
