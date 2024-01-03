@@ -23,14 +23,12 @@ def handle_user_connection(socket_object):
     Query = socket_object.recv(1024).decode("utf-8")
     if Query != "":
         print("Query: ", Query)
-
+        RAG.LLM_Run(Query)
         socket_object.sendall(str().encode('utf-8'))
 
     elif Query == '':
         print()
         socket_object.close()
-        break
-    pass
 
 
 def main():
