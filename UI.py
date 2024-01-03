@@ -93,6 +93,7 @@ def main():
     #app.attributes("-topmost", 1)
     dark_title_bar(app)
     #app.overrideredirect(True)
+   
     # Prevent the window from appearing on the taskbar
 
     on_c = '#2B3230'
