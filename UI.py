@@ -118,7 +118,7 @@ def main():
     fg_color = 'gray'
 
     VIEW_BOX = tk.Frame(app, bg=bg_color, borderwidth=0, border=0)
-    VIEW_BOX.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
+    VIEW_BOX.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.85)
     # VIEW_DISPLAY, welcome_page_root = attach_scroll(VIEW_BOX)
 
     VIEW_BOX = tk.Text(VIEW_BOX, bg="blue", borderwidth=0, border=0, font=(13))
