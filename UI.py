@@ -88,8 +88,8 @@ def main():
     app.maxsize(950, 700)
     app.minsize(950, 700)
     app.title('')
-    # app.attributes("-toolwindow", 1)
-    app.attributes("-topmost", 1)
+    app.attributes("-toolwindow", 1)
+    #app.attributes("-topmost", 1)
     dark_title_bar(app)
     #app.overrideredirect(True)
     on_c = '#2B3230'
