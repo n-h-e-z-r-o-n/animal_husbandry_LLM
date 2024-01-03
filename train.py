@@ -76,12 +76,11 @@ prompt = PromptTemplate(template=template, input_variables=["Instruction"])
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 
-def LLM_QURY():
-    global llm_chain
-    answer = llm_chain.run(Instruction=question)
-    return answer
+
+
+
 
 
 question = "Discuss the role of nutrition in animal husbandry"
-
-print(LLM_QURY(question))
+answer = llm_chain.run(Instruction=question)
+print(answer)
