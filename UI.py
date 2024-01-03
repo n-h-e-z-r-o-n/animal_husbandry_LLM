@@ -5,8 +5,8 @@ import threading
 from PIL import Image, ImageTk
 import io, socket
 import base64
-# import RAG
-# import Test_LLM
+#import RAG
+#import Test_LLM
 
 
 from tkinter import messagebox
@@ -16,7 +16,7 @@ root = None
 client_socket = None
 shift_scroll = 0
 grid_widgets = []
-
+model_no = 1
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -53,17 +53,20 @@ def imagen(image_path, screen_width, screen_height, widget):
 
 
 def ask_binary_choice():
-    global widget
-    result = messagebox.askyesno("Binary Choice", "Do you want to proceed?")
-    if result:
-        widget.config(text="You chose Yes")
+    global CHANGE_LLM, model_no
+    if model_no == 2:
+        CHANGE_LLM.config(text="Fine_tuned only")
+        model_no = 1
+    elif model_no == 1:
+        CHANGE_LLM.config(text="Fine tuned + RAG")
+        model_no = 2
     else:
-        widget.config(text="You chose No")
+        pass
 
 
 def Request_Info(user_query):
     def start(user_query=user_query):
-        global VIEW_BOX, QUERY_BT
+        global VIEW_BOX, QUERY_BT, model_no
         global client_socket
 
         VIEW_BOX.config(state=tk.NORMAL)
@@ -71,20 +74,24 @@ def Request_Info(user_query):
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
 
+
         QUERY_BT.config(text="▫▫▫▫", fg="green", state=tk.DISABLED)
-        answer = "ejfioewgewogwegkoewpglewgewgg"
-
-        # answer = RAG.LLM_Run(str(user_query))
-        # answer = Test_LLM.llm_chain.run(Instruction=user_query)
-
-        time.sleep(2)
+        CHANGE_LLM.config(state=tk.DISABLED)
+        """
+        if model_no == 1:
+                answer = Test_LLM.llm_chain.run(Instruction=user_query)
+        else:
+                answer = RAG.LLM_Run(str(user_query))
+        """
+        answer = "sdsdsdsd"
+        CHANGE_LLM.config(state=tk.NORMAL)
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
 
         QUERY_BT.config(text="►", fg="gray", state=tk.NORMAL)
-
+        CHANGE_LLM.config(state=tk.NORMAL)
     threading.Thread(target=start).start()
 
 
@@ -120,8 +127,8 @@ def main():
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
-    CHANGE_LLM = tk.Button(app, bg=of_c, fg="gray", justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0,  command=lambda: ask_binary_choice())
-    CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.2, relheight=0.05)
+    CHANGE_LLM = tk.Button(app, bg=of_c, fg="gray", text="Fine_tuned only", activebackground=bg_color, justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0,  command=lambda: ask_binary_choice())
+    CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
