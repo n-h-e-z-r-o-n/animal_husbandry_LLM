@@ -20,14 +20,14 @@ print(f"Server listening on {host}:{port}")
 
 
 def handle_user_connection(socket_object):
+    while True:
     Query = socket_object.recv(1024).decode("utf-8")
     if Query != "":
         print("Query: ", Query)
-        RAG.LLM_Run(Query)
-        socket_object.sendall(str().encode('utf-8'))
+        answer =RAG.LLM_Run(Query)
+        socket_object.sendall(str(answer).encode('utf-8'))
 
     elif Query == '':
-        print()
         socket_object.close()
 
 
