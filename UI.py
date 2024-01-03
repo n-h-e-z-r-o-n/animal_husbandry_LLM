@@ -10,7 +10,7 @@ import Test_LLM
 
 
 
-VIEW_BOX = None
+VIEW_BOX = QUERY_BT= None
 root = None
 client_socket = None
 shift_scroll = 0
@@ -53,7 +53,7 @@ def imagen(image_path, screen_width, screen_height, widget):
 
 def Request_Info(user_query):
     def start(user_query=user_query):
-        global VIEW_BOX
+        global VIEW_BOX, QUERY_BT
         global client_socket
 
         VIEW_BOX.config(state=tk.NORMAL)
@@ -61,7 +61,9 @@ def Request_Info(user_query):
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
 
-        my_button.config(state=tk.DISABLED)
+
+        QUERY_BT.config(state=tk.DISABLED)
+
         answer = RAG.LLM_Run(str(user_query))
 
         VIEW_BOX.config(state=tk.NORMAL)
@@ -69,10 +71,12 @@ def Request_Info(user_query):
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
 
+        QUERY_BT.config(state=tk.NORMAL)
+
     threading.Thread(target=start).start()
 
 def main():
-    global VIEW_BOX
+    global VIEW_BOX, QUERY_BT
     # bg_color = "#1B1B1B"
     # bg_color = "#212122"
     bg_color = "#1F201F"
