@@ -61,12 +61,14 @@ def Request_Info(user_query):
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
 
+        my_button.config(state=tk.DISABLED)
         answer = RAG.LLM_Run(str(user_query))
 
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
+
     threading.Thread(target=start).start()
 
 def main():
