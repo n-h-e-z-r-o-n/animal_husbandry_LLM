@@ -4,6 +4,10 @@ import threading
 from PIL import Image, ImageTk
 import io, socket
 import base64
+import RAG
+import Test_LLM
+
+
 
 
 VIEW_BOX = None
@@ -11,6 +15,8 @@ root = None
 client_socket = None
 shift_scroll = 0
 grid_widgets = []
+
+
 # =============================== Server Details ======================================================================================================================
 
 
