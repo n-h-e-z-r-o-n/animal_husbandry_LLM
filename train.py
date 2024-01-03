@@ -53,7 +53,8 @@ with Gradient() as gradient:
         for i in chunks:
             print(f"chunk {n} range: {s} : {(s + i)}")
             while True:
-                try:
+                try: # Try to fine-tune the model with the chunk of samples, If an error occurs, retry
+
                     new_model_adapter.fine_tune(samples=samples[s: (s + i)])
                     break
                 except:
