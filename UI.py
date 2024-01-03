@@ -102,8 +102,8 @@ def main():
     app = tk.Tk()
 
     app.config(bg=bg_color)
-    # app.maxsize(1024, 700)
-    app.minsize(500, 300)
+    app.maxsize(950, 700)
+    app.minsize(950, 700)
     app.title('')
     # app.attributes("-toolwindow", 1)
     # app.attributes("-topmost", 1)
