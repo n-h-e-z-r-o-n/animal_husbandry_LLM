@@ -50,23 +50,24 @@ def imagen(image_path, screen_width, screen_height, widget):
     image_thread = threading.Thread(target=load_image)  # Create a thread to load the image asynchronously
     image_thread.start()
 
+
 def Request_Info(user_query):
-    def start ()
-    global VIEW_BOX
-    global client_socket
+    def start(user_query=user_query):
+        global VIEW_BOX
+        global client_socket
 
-    VIEW_BOX.config(state=tk.NORMAL)
-    VIEW_BOX.insert(tk.END,  f"\n{user_query}\n", 'user_config')
-    VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
-    VIEW_BOX.config(state=tk.DISABLED)
+        VIEW_BOX.config(state=tk.NORMAL)
+        VIEW_BOX.insert(tk.END,  f"\n{user_query}\n", 'user_config')
+        VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
+        VIEW_BOX.config(state=tk.DISABLED)
 
+        answer = RAG.LLM_Run(str(user_query))
 
-    answer = RAG.LLM_Run(str(user_query))
-
-    VIEW_BOX.config(state=tk.NORMAL)
-    VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
-    VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
-    VIEW_BOX.config(state=tk.DISABLED)
+        VIEW_BOX.config(state=tk.NORMAL)
+        VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
+        VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
+        VIEW_BOX.config(state=tk.DISABLED)
+    threading.Thread(target=start).start()
 
 def main():
     global VIEW_BOX
