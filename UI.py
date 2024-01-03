@@ -9,6 +9,15 @@ import base64
 #import Test_LLM
 
 
+from tkinter import messagebox
+
+
+def ask_binary_choice():
+    result = messagebox.askyesno("Binary Choice", "Do you want to proceed?")
+    if result:
+        label.config(text="You chose Yes")
+    else:
+        label.config(text="You chose No")
 
 
 VIEW_BOX = QUERY_BT= None
