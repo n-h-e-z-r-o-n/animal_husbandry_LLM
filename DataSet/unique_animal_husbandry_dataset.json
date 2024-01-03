@@ -602,5 +602,8 @@
   {"question": "What are the potential challenges of not planning farm management in veld management?", "answer": "Potential challenges include inefficient utilization of the veld, overgrazing, and reduced animal production."},
   {"question": "How does veld management contribute to sustainable animal production?", "answer": "Veld management ensures that animals have access to enough palatable grasses, which is essential for sustainable animal production."},
   {"question": "What are the risks of not adapting animal numbers seasonally in veld management?", "answer": "Risks include overgrazing, degradation of the veld, and reduced animal production."},
-  {"question": "What are the potential consequences of not rotating veld and providing sufficient resting?", "answer": "Consequences include reduced veld health, decreased meat production per hectare, and overgrazing."}
+  {"question": "What are the potential consequences of not rotating veld and providing sufficient resting?", "answer": "Consequences include reduced veld health, decreased meat production per hectare, and overgrazing."},
+  { "inputs": "### Instruction: What is animal husbandry? \n\n### Response: Animal husbandry refers to the agricultural practice of breeding and raising livestock for various purposes, such as food, milk, wool, and other products." },
+
+
 ]
