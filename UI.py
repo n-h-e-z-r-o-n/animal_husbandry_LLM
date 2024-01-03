@@ -89,9 +89,9 @@ def main():
     app.minsize(950, 700)
     app.title('')
     # app.attributes("-toolwindow", 1)
-    # app.attributes("-topmost", 1)
+    app.attributes("-topmost", 1)
     dark_title_bar(app)
-    app.overrideredirect(True)
+    #app.overrideredirect(True)
     on_c = '#2B3230'
     of_c = '#2B2B2C'
     fg_color = 'gray'
