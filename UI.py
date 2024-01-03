@@ -121,13 +121,13 @@ def main():
     VIEW_BOX.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     # VIEW_DISPLAY, welcome_page_root = attach_scroll(VIEW_BOX)
 
-    VIEW_BOX = tk.Text(VIEW_BOX, bg="blue", borderwidth=0, border=0, font=(13))
+    VIEW_BOX = tk.Text(VIEW_BOX, bg=bg_color, borderwidth=0, border=0, font=(13))
     VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
-    CHANGE_LLM = tk.Button(app, bg=bg_color, fg="#4C516D", text="Fine_tuned only", activebackground=bg_color, justify=tk.LEFT, anchor="w", font=("Courier New", 12, "italic"), borderwidth=0, border=0,  command=lambda: ask_binary_choice())
+    CHANGE_LLM = tk.Button(app, bg=bg_color, fg="#126180", text="Fine_tuned only", activebackground=bg_color, justify=tk.LEFT, anchor="w", font=("Courier New", 12, "italic"), borderwidth=0, border=0,  command=lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
