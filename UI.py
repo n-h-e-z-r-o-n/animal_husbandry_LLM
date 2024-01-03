@@ -73,7 +73,6 @@ def Request_Info(user_query):
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
         VIEW_BOX.config(state=tk.DISABLED)
 
-
         QUERY_BT.config(text="▫▫▫▫", fg="green", state=tk.DISABLED)
         CHANGE_LLM.config(state=tk.DISABLED)
 
@@ -115,11 +114,11 @@ def main():
     of_c = '#2B2B2C'
     fg_color = 'gray'
 
-    VIEW_BOX = tk.Frame(app, bg=bg_color, borderwidth=0, border=0)
-    VIEW_BOX.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
+    VIEW_BOX_canvas = tk.Frame(app, bg=bg_color, borderwidth=0, border=0)
+    VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     # VIEW_DISPLAY, welcome_page_root = attach_scroll(VIEW_BOX)
 
-    VIEW_BOX = tk.Text(VIEW_BOX, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
+    VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
     VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
