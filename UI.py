@@ -88,7 +88,6 @@ def main():
     app.maxsize(950, 700)
     app.minsize(950, 700)
     app.title('Lage Language Model')
-    app.iconbitmap('')
     #app.attributes("-toolwindow", 1)
     #app.attributes("-topmost", 1)
     #app.overrideredirect(True)
