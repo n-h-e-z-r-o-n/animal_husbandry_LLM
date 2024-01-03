@@ -76,15 +76,8 @@ def Request_Info(user_query):
     global VIEW_BOX
     global client_socket
 
-    """
-    try:
-        client_socket.sendall(str(user_query).encode('utf-8'))
-        response = client_socket.recv(1024).decode("utf-8")
-    except:
-        if client_socket != None:
-            threading.Thread(target=connect_to_Server).start()
-            return
-     """
+    answer = RAG.LLM_Run(str(user_query))
+
     VIEW_BOX.config(state=tk.NORMAL)
     VIEW_BOX.insert(tk.END,  f"\n{user_query}\n", 'user_config')
     VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
