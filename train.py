@@ -11,9 +11,8 @@ from langchain.llms import GradientLLM
 from langchain.prompts import PromptTemplate
 
 # Set the environment variables for gradient.ai using your access token and workspace ID
-os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J"
-os.environ['GRADIENT_WORKSPACE_ID'] = "b04a475d-65d1-4e98-82f2-62d218be3989_workspace"
-
+os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J4"
+os.environ['GRADIENT_WORKSPACE_ID'] = "b04a475d-65d1-4e98-82f2-62d218be3989_workspace4"
 
 # ========================== LOADING THE DATASET AND DIVIDING IT INTO CHUNKS =====================================================
 
