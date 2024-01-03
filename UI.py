@@ -19,7 +19,7 @@ def connect_to_Server():
     server_domain_name = "inspiring-frost-18221.pktriot.net"
     server_IP4v_address = socket.gethostbyname(server_domain_name)
     print("SERVER IP : ", server_IP4v_address)
-    server_IP4v_address = "192.168.100.22"
+    server_IP4v_address = "127.0.0.1"
     Server_listening_port = 22575  # socket server port number
     while True:
         try:
