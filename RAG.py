@@ -82,5 +82,5 @@ def LLM_Run(question):
     return result["answer_builder"]["answers"][0].data
 
 
-Query = "What is animal husbandry??"
-print(LLM_Run(Query))
+#Query = "What is animal husbandry??"
+#print(LLM_Run(Query))
