@@ -92,6 +92,8 @@ def main():
     #app.attributes("-topmost", 1)
     dark_title_bar(app)
     #app.overrideredirect(True)
+    # Prevent the window from appearing on the taskbar
+    app.wm_attributes('-type', 'splash')
     on_c = '#2B3230'
     of_c = '#2B2B2C'
     fg_color = 'gray'
