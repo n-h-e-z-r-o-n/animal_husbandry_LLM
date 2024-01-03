@@ -83,4 +83,4 @@ def LLM_Run(question):
 
 
 Query = "What is animal husbandry??"
-# print(LLM_Run(Query))
+print(LLM_Run(Query))
