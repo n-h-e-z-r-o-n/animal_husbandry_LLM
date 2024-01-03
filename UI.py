@@ -82,7 +82,6 @@ def Request_Info(user_query):
         else:
                 answer = RAG.LLM_Run(str(user_query))
 
-        answer = "sdsdsdsd"
         CHANGE_LLM.config(state=tk.NORMAL)
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
