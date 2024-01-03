@@ -1,7 +1,8 @@
 import random
 import threading
 import socket
-import select
+import Test_LLM
+import RAG
 # =============================== Server Details ======================================================================================================================
 # Create a socket object
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -22,18 +23,8 @@ def handle_user_connection(socket_object):
     Query = socket_object.recv(1024).decode("utf-8")
     if Query != "":
         print("Query: ", Query)
-        Hold = []
 
-        for i in active_servers:
-            i.sendall(str(Query).encode('utf-8'))
-            result = i.recv(1024).decode("utf-8")
-            Hold.append(result)
-
-        if len(Hold) != 0:
-            index = random.randint(0, (len(Hold) - 1))
-            socket_object.sendall(str(Hold[index]).encode('utf-8'))
-        else:
-            socket_object.sendall(str("None").encode('utf-8'))
+        socket_object.sendall(str().encode('utf-8'))
 
     elif Query == '':
         print()
