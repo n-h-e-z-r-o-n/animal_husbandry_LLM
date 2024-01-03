@@ -12,12 +12,6 @@ import base64
 from tkinter import messagebox
 
 
-def ask_binary_choice():
-    result = messagebox.askyesno("Binary Choice", "Do you want to proceed?")
-    if result:
-        label.config(text="You chose Yes")
-    else:
-        label.config(text="You chose No")
 
 
 VIEW_BOX = QUERY_BT= None
@@ -59,6 +53,15 @@ def imagen(image_path, screen_width, screen_height, widget):
 
     image_thread = threading.Thread(target=load_image)  # Create a thread to load the image asynchronously
     image_thread.start()
+
+
+def ask_binary_choice():
+    gloabl widget
+    result = messagebox.askyesno("Binary Choice", "Do you want to proceed?")
+    if result:
+        label.config(text="You chose Yes")
+    else:
+        label.config(text="You chose No")
 
 
 def Request_Info(user_query):
