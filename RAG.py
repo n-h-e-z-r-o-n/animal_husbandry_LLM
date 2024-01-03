@@ -23,7 +23,7 @@ document_embedder = GradientDocumentEmbedder(
     workspace_id=os.environ["GRADIENT_WORKSPACE_ID"],
 )
 
-with open(r"/animal_husbandry_LLM/DataSet/state_of_the_union.txt", 'r') as file:
+with open("/DataSet/state_of_the_union.txt", 'r') as file:
     text_data = file.read()
 
 docs = [
