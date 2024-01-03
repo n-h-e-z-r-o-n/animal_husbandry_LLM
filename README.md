@@ -1,9 +1,12 @@
-# Automatic GitHub Commit and Push App
+# LLM FOR ANIMAL HUSBANDRY
 
 libraries used : 
 gradientai
+
 gradient_haystack
+
 langchain-community
+
 langchain
 
 install: 
