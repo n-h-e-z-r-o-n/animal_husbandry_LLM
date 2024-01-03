@@ -56,12 +56,12 @@ def imagen(image_path, screen_width, screen_height, widget):
 
 
 def ask_binary_choice():
-    gloabl widget
+    global widget
     result = messagebox.askyesno("Binary Choice", "Do you want to proceed?")
     if result:
-        label.config(text="You chose Yes")
+        widget.config(text="You chose Yes")
     else:
-        label.config(text="You chose No")
+        widget.config(text="You chose No")
 
 
 def Request_Info(user_query):
