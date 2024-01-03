@@ -63,7 +63,7 @@ def Request_Info(user_query):
 
 
         QUERY_BT.config(state=tk.DISABLED)
-
+        answer = "ejfioewgewogwegkoewpglewgewgg"
         #answer = RAG.LLM_Run(str(user_query))
 
         VIEW_BOX.config(state=tk.NORMAL)
@@ -101,7 +101,7 @@ def main():
     VIEW_BOX = tk.Text(VIEW_BOX, bg=bg_color, borderwidth=0, border=0, font=( 13))
     VIEW_BOX.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT )  # user queries  config's
-    VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.RIGHT)  # llm responses config's
+    VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
