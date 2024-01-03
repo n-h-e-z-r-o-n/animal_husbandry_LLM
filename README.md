@@ -9,11 +9,11 @@ langchain-community
 
 langchain
 
-install: 
-!pip install gradientai --upgrade
-!pip install langchain
-!pip install langchain-community
-!pip install -U langchain
+install:
+%!pip install gradientai --upgrade
+%!pip install langchain
+%!pip install langchain-community
+%!pip install -U langchain
 
 # License
 
