@@ -1,12 +1,11 @@
-import time
 import tkinter as tk
 import ctypes as ct
 import threading
 from PIL import Image, ImageTk
-import io, socket
+import io
 import base64
-#import RAG
-#import Test_LLM
+import RAG
+import Test_LLM
 
 
 from tkinter import messagebox
@@ -77,12 +76,12 @@ def Request_Info(user_query):
 
         QUERY_BT.config(text="▫▫▫▫", fg="green", state=tk.DISABLED)
         CHANGE_LLM.config(state=tk.DISABLED)
-        """
+
         if model_no == 1:
                 answer = Test_LLM.llm_chain.run(Instruction=user_query)
         else:
                 answer = RAG.LLM_Run(str(user_query))
-        """
+
         answer = "sdsdsdsd"
         CHANGE_LLM.config(state=tk.NORMAL)
         VIEW_BOX.config(state=tk.NORMAL)
