@@ -63,7 +63,7 @@ def Request_Info(user_query):
         VIEW_BOX.config(state=tk.DISABLED)
 
 
-        QUERY_BT.config( text = "🔳", fg="green", state=tk.DISABLED)
+        QUERY_BT.config( text = "▫️", fg="green", state=tk.DISABLED)
         answer = "ejfioewgewogwegkoewpglewgewgg"
         #answer = RAG.LLM_Run(str(user_query))
 
