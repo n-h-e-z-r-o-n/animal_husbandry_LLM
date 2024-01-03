@@ -123,8 +123,8 @@ def main():
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
-    CHANGE_LLM = tk.Button(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
-    CHANGE_LLM.place(relx=0.05, rely=0.92, relwidth=0.1, relheight=0.07)
+    CHANGE_LLM = tk.Button(app, bg=of_c, fg="gray", justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
+    CHANGE_LLM.place(relx=0.05, rely=0.82, relwidth=0.09, relheight=0.07)
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
