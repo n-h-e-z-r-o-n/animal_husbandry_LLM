@@ -63,11 +63,11 @@ def Request_Info(user_query):
         VIEW_BOX.config(state=tk.DISABLED)
 
 
-        QUERY_BT.config( text = "▫️", fg="green", state=tk.DISABLED)
+        QUERY_BT.config( text = "▫▫▫▫", fg="green", state=tk.DISABLED)
         answer = "ejfioewgewogwegkoewpglewgewgg"
         #answer = RAG.LLM_Run(str(user_query))
 
-        time.sleep(5)
+        time.sleep(2)
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
