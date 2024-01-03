@@ -65,7 +65,7 @@ with Gradient() as gradient:
 
 
 # ==================================== TESTING THE FINE_TUNED MODEL ====================================================================
-
+# Create a GradientLLM object with the fine-tuned model ID and the maximum number of tokens to generate
 llm = GradientLLM(
 
     model=new_model_adapter.id,
