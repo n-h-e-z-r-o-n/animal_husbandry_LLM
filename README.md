@@ -1,19 +1,19 @@
 # LLM FOR ANIMAL HUSBANDRY
 
 libraries used : 
-gradientai
-
-gradient_haystack
-
-langchain-community
-
-langchain
+- gradientai
+- gradient_haystack
+- langchain-community
+- langchain
 
 install:
-%!pip install gradientai --upgrade
-%!pip install langchain
-%!pip install langchain-community
-%!pip install -U langchain
+```
+!pip install gradientai --upgrade\
+!pip install langchain\
+!pip install langchain-community\
+!pip install -U langchain\
+```
+
 
 # License
 
