@@ -17,7 +17,7 @@ os.environ['GRADIENT_WORKSPACE_ID'] = "b04a475d-65d1-4e98-82f2-62d218be3989_work
 
 # ========================== LOADING THE DATASET AND DIVIDING IT INTO CHUNKS =====================================================
 
-def divide_into_chunks(number, chunk_size): # Define a function to divide a number into chunks of a given size
+def divide_into_chunks(number, chunk_size):  # Define a function to divide a number into chunks of a given size
     chunks = []
     while number > 0:
         if number >= chunk_size:
@@ -30,10 +30,10 @@ def divide_into_chunks(number, chunk_size): # Define a function to divide a numb
     return chunks
 
 
-with open("/content/data.json") as f: # Load the dataset from a JSON file
+with open("/content/data.json") as f:  # Load the dataset from a JSON file
     samples = json.load(f)
 
-chunks = divide_into_chunks(len(samples), 100) # Divide the dataset into chunks of 100 samples each
+chunks = divide_into_chunks(len(samples), 100)  # Divide the dataset into chunks of 100 samples each
 print(chunks)
 
 # =============================== FINE TUNING THE MODEL ============================================================================
@@ -53,7 +53,7 @@ with Gradient() as gradient:
         for i in chunks:
             print(f"chunk {n} range: {s} : {(s + i)}")
             while True:
-                try: # Try to fine-tune the model with the chunk of samples, If an error occurs, retry
+                try:  # Try to fine-tune the model with the chunk of samples, If an error occurs, retry
 
                     new_model_adapter.fine_tune(samples=samples[s: (s + i)])
                     break
@@ -62,7 +62,6 @@ with Gradient() as gradient:
             s += i
             n += 1
         count = count + 1
-
 
 # ==================================== TESTING THE FINE_TUNED MODEL ====================================================================
 # Create a GradientLLM object with the fine-tuned model ID and the maximum number of tokens to generate
@@ -74,8 +73,14 @@ llm = GradientLLM(
 
 template = """### Instruction: {Instruction} \n\n### Response:"""
 
+
 def LLM_QURY():
-    PAS
+    pass
+
+
 prompt = PromptTemplate(template=template, input_variables=["Instruction"])
 answer = llm_chain = LLMChain(prompt=prompt, llm=llm)
+Instruction = "Discuss the role of nutrition in animal husbandry"
+
+llm_chain.run(Instruction=Instruction)
 print(answer)
