@@ -5,8 +5,8 @@ import threading
 from PIL import Image, ImageTk
 import io, socket
 import base64
-#import RAG
-#import Test_LLM
+import RAG
+import Test_LLM
 
 
 
@@ -66,6 +66,7 @@ def Request_Info(user_query):
         QUERY_BT.config( text = "▫▫▫▫", fg="green", state=tk.DISABLED)
         answer = "ejfioewgewogwegkoewpglewgewgg"
         #answer = RAG.LLM_Run(str(user_query))
+        answer = Test_LLM.LLM_Run(str(user_query))
 
         time.sleep(2)
         VIEW_BOX.config(state=tk.NORMAL)
