@@ -76,17 +76,21 @@ def Request_Info(user_query):
     global VIEW_BOX
     global client_socket
 
-    answer = RAG.LLM_Run(str(user_query))
+
+
+
+
 
     VIEW_BOX.config(state=tk.NORMAL)
     VIEW_BOX.insert(tk.END,  f"\n{user_query}\n", 'user_config')
     VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
     VIEW_BOX.config(state=tk.DISABLED)
 
-    llm_answer = "No connection could be made because the target machine actively refused it"
+
+    answer = RAG.LLM_Run(str(user_query))
 
     VIEW_BOX.config(state=tk.NORMAL)
-    VIEW_BOX.insert(tk.END, f"\n{llm_answer}\n", 'llm_config')
+    VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
     VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
     VIEW_BOX.config(state=tk.DISABLED)
 
