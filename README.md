@@ -13,7 +13,9 @@ install:
 !pip install langchain-community\
 !pip install -U langchain\
 ```
-
+learn more about gradient ai : [link]("https://gradient.ai/") \
+learn more about gradient_Haystack : [link](https://docs.gradient.ai/docs/haystack) \
+learn more about langchain: [link](https://python.langchain.com/docs/get_started/introduction) \
 
 # License
 
