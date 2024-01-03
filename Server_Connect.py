@@ -27,7 +27,7 @@ def main():
         client_socket, client_address = server_socket.accept()  # Wait for a connection
         data = client_socket.recv(1024).decode("utf-8")
         print(f"Connection from {str(data)} at : {client_address}")
-        if str(data) == "USER":
+        if str(data) == "USER_LLM":
             active_users.append(client_socket)
             threading.Thread(target=handle_user_connection, args=(client_socket,)).start()
         if str(data) == "NODE":

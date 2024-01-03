@@ -25,7 +25,7 @@ def connect_to_Server():
         try:
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # instantiate
             client_socket.connect((server_IP4v_address, Server_listening_port))  # connect to the server
-            client_socket.sendall("USER".encode('utf-8'))
+            client_socket.sendall("USER_LLM".encode('utf-8'))
             break
         except:
             pass
