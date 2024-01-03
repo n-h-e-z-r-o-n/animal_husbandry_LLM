@@ -123,7 +123,7 @@ def main():
     CHANGE_LLM = tk.Button(app, bg=of_c, fg="gray", justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.2, relheight=0.05)
 
-    QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0, )
+    QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0, command=lambda: ask_binary_choice())
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
 
     QUERY_BT = tk.Button(app, bg=bg_color, activebackground=bg_color, fg="gray", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda: Request_Info(QUERY_ENTRY.get()))
