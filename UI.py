@@ -4,8 +4,8 @@ import threading
 from PIL import Image, ImageTk
 import io, socket
 import base64
-import RAG
-import Test_LLM
+#import RAG
+#import Test_LLM
 
 
 
@@ -64,7 +64,7 @@ def Request_Info(user_query):
 
         QUERY_BT.config(state=tk.DISABLED)
 
-        answer = RAG.LLM_Run(str(user_query))
+        #answer = RAG.LLM_Run(str(user_query))
 
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
@@ -110,12 +110,7 @@ def main():
     QUERY_BT = tk.Button(app, bg=bg_color, activebackground=bg_color, fg="gray", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda:  Request_Info(QUERY_ENTRY.get()))
     QUERY_BT.place(relx=0.965, rely=0.92, relheight=0.07, relwidth=0.03)
 
-    def on_closing():
-        global client_socket
-        client_socket.close()
-        app.destroy()
 
-    app.protocol("WM_DELETE_WINDOW", on_closing)
     app.mainloop()
 
 

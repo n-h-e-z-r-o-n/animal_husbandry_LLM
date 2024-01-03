@@ -29,5 +29,5 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 Question = "Discuss the role of nutrition in animal husbandry"
 
-Answer = llm_chain.run(Instruction=Question)
-print(Answer)
+#Answer = llm_chain.run(Instruction=Question)
+#print(Answer)
