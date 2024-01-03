@@ -19,6 +19,26 @@ print(f"Server listening on {host}:{port}")
 
 
 def handle_user_connection(socket_object):
+    Query = socket_object.recv(1024).decode("utf-8")
+    if Query != "":
+        print("Query: ", Query)
+        Hold = []
+
+        for i in active_servers:
+            i.sendall(str(Query).encode('utf-8'))
+            result = i.recv(1024).decode("utf-8")
+            Hold.append(result)
+
+        if len(Hold) != 0:
+            index = random.randint(0, (len(Hold) - 1))
+            socket_object.sendall(str(Hold[index]).encode('utf-8'))
+        else:
+            socket_object.sendall(str("None").encode('utf-8'))
+
+    elif Query == '':
+        print()
+        socket_object.close()
+        break
     pass
 
 
@@ -30,9 +50,7 @@ def main():
         if str(data) == "USER_LLM":
             active_users.append(client_socket)
             threading.Thread(target=handle_user_connection, args=(client_socket,)).start()
-        if str(data) == "NODE":
-            active_servers.append(client_socket)
-            threading.Thread(target=handle_server_connection, args=(client_socket,)).start()
+
 
 
 if __name__ == '__main__':
