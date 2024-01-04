@@ -97,6 +97,7 @@ def main():
     # bg_color = "#1B1B1B"
     # bg_color = "#212122"
     bg_color = "#1F201F"
+
     app = tk.Tk()
 
     app.config(bg=bg_color)
