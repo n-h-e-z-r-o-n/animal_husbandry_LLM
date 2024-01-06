@@ -130,6 +130,7 @@ def main():
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
+    QUERY_ENTRY.bind("<Return>", lambda: Request_Info(QUERY_ENTRY.get()))
 
     QUERY_BT = tk.Button(app, bg=bg_color, activebackground=bg_color, fg="gray", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda: Request_Info(QUERY_ENTRY.get()))
     QUERY_BT.place(relx=0.965, rely=0.92, relheight=0.07, relwidth=0.03)
