@@ -16,7 +16,7 @@ status = 0
 shift_scroll = 0
 grid_widgets = []
 model_no = 1
-display = 0
+display = 1
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ def Request_Info(user_query):
     threading.Thread(target=start).start()
 
 
-def display_hide_chats():
+def display_hide_chats(widg):
     global VIEW_BOX, D_HIDE, display
     if display == 0:
         D_HIDE.config(text="<")
