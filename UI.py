@@ -67,7 +67,9 @@ def ask_binary_choice():
 
 
 def Request_Info(user_query):
+    global display
     if display == 0:
+        display_hide_chats()
 
     def start(user_query=user_query):
         global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR
