@@ -165,7 +165,7 @@ def main():
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
-    D_HIDE = tk.Button(app, bg=bg_color, text=">", fg="white", compound=tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command=lambda :display_hide_chats(D_HIDE, VIEW_BOX))
+    D_HIDE = tk.Button(app, bg=bg_color, text=">", fg="white", compound=tk.CENTER, activebackground=bg_color, anchor="w", font=("Georgia", 12, "bold"), borderwidth=0, border=0, command=lambda :display_hide_chats(D_HIDE, VIEW_BOX))
     D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
     imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
 
