@@ -111,14 +111,14 @@ def Request_Info(user_query):
     threading.Thread(target=start).start()
 
 
-def display_hide_chats(widg):
+def display_hide_chats(widget):
     global VIEW_BOX, D_HIDE, display
     if display == 0:
-        D_HIDE.config(text="<")
+        widget.config(text="<")
         VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
         display = 0
     elif  display == 1:
-        D_HIDE.config(text=">")
+        widget.config(text=">")
         VIEW_BOX.place_forget()
         display = 1
 
@@ -155,10 +155,10 @@ def main():
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
-    D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: display_hide_chats())
+    D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = display_hide_chats)
     D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
     imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
-    # , command = lambda: display_hide_chats()
+
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
     VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
