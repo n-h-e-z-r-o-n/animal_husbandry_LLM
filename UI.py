@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 import io
 import base64
 import RAG
-#import Test_LLM
+import Test_LLM
 
 
 from tkinter import messagebox
@@ -83,7 +83,7 @@ def Request_Info(user_query):
 
 
         print(user_query)
-        return
+        
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{user_query}\n", 'user_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
@@ -93,11 +93,11 @@ def Request_Info(user_query):
 
 
         if model_no == 1:
-                #answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
-                pass
+                answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
+
         else:
-                #answer = RAG.LLM_Run(str(user_query))
-                pass
+                answer = RAG.LLM_Run(str(user_query))
+
         print(answer)
 
         VIEW_BOX.config(state=tk.NORMAL)
