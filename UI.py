@@ -120,7 +120,6 @@ def display_hide_chats():
     else:
         D_HIDE.config(text=">")
         VIEW_BOX.place_forget()
-
         display = 1
 
 
