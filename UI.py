@@ -120,8 +120,8 @@ def display_hide_chats():
     else:
         D_HIDE.config(text=">")
         if VIEW_BOX.winfo_ismapped():
-            # VIEW_BOX.place_forget()
-            pass
+             VIEW_BOX.place_forget()
+
         display = 1
 
 
