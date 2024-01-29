@@ -139,7 +139,8 @@ def main():
     imagen(r"C:\Users\HEZRON WEKESA\Downloads\pexels-matthis-volquardsen-2157000.jpg", 950, 700, BACKGROUND)
 
     VIEW_BOX_canvas = tk.Frame(app, bg=bg_color, borderwidth=0, border=0)
-    #VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
+    VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
+    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 160322.png", int(950 * 0.25), int(700 * 0.04), CHANGE_LLM)
     # VIEW_DISPLAY, welcome_page_root = attach_scroll(VIEW_BOX)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
