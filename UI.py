@@ -144,7 +144,7 @@ def main():
 
     hide =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     hide.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
-    imagen("./assets/bt1.png", int(950 * 0.9), int(700 * 0.7), hide)
+    imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), hide)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
     #VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
