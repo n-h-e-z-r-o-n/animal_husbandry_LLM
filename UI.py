@@ -72,7 +72,7 @@ def Request_Info(user_query):
         else:
             if str(user_query) == "":
                 print("q empty")
-                INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.003)
+
                 return
             else:
                  status = 1
@@ -162,8 +162,8 @@ def main():
     imagen("./assets/button_bg2.png", int(950 * 0.03), int(700 * 0.07), QUERY_BT)
 
 
-    INDICATOR = tk.Label(app, bg="red", borderwidth=0, border=0)
-
+    INDICATOR = tk.Label(app, bg="green", borderwidth=0, border=0)
+    INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.003)
 
     app.mainloop()
 
