@@ -140,11 +140,11 @@ def main():
 
     VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
-    imagen(r"C:\Users\HEZRON WEKESA\Downloads\pexels-matthis-volquardsen-2157000.jpg", int(950*0.9),int(700*), VIEW_BOX_canvas)
+    imagen(r"C:\Users\HEZRON WEKESA\Downloads\pexels-matthis-volquardsen-2157000.jpg", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
-    VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
+    #VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
