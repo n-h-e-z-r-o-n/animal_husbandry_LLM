@@ -151,7 +151,7 @@ def main():
 
     imagen("./assets/bg_image.jpg", 950, 700, BACKGROUND)
 
-    VIEW_BOX_canvas = tk.LabelFrame(app, bg=bg_color, borderwidth=0, border=0)
+    VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
