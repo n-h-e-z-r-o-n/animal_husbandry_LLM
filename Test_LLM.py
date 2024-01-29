@@ -27,7 +27,7 @@ prompt = PromptTemplate(template=template, input_variables=["Instruction"])
 
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
-Question = "Discuss the role of nutrition in animal husbandry"
+Question = "Hello"
 
-#Answer = llm_chain.run(Instruction=Question)
+#Answer = llm_chain.run(Instruction=f"respond to this: {Question}")
 #print(Answer)
