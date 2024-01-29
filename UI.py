@@ -83,7 +83,7 @@ def Request_Info(user_query):
 
 
         print(user_query)
-        
+
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{user_query}\n", 'user_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
