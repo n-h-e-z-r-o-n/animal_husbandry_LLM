@@ -88,8 +88,10 @@ def Request_Info(user_query):
 
         if model_no == 1:
                 #answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
+                pass
         else:
                 #answer = RAG.LLM_Run(str(user_query))
+                pass
         print(answer)
         #CHANGE_LLM.config(state=tk.NORMAL)
         VIEW_BOX.config(state=tk.NORMAL)
@@ -156,8 +158,8 @@ def main():
     imagen("./assets/button_bg2.png", int(950 * 0.03), int(700 * 0.07), QUERY_BT)
     app.mainloop()
 
-    INDICATOR = tk.Entry(app, bg="red", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
-    INDICATOR.place(relx=0.05, rely=0.94, relwidth=0.4, relheight=0.02)
+    INDICATOR = tk.Label(app, bg="red", , justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
+    INDICATOR.place(relx=0.05, rely=0.9, relwidth=0.4, relheight=0.066)
 
 
 if __name__ == "__main__":
