@@ -4,8 +4,8 @@ import threading
 from PIL import Image, ImageTk
 import io
 import base64
-import RAG
-import Test_LLM
+#import RAG
+#import Test_LLM
 
 
 from tkinter import messagebox
@@ -77,7 +77,7 @@ def Request_Info(user_query):
 
 
         print(user_query)
-
+        return
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{user_query}\n", 'user_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
@@ -87,9 +87,9 @@ def Request_Info(user_query):
 
 
         if model_no == 1:
-                answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
+                #answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
         else:
-                answer = RAG.LLM_Run(str(user_query))
+                #answer = RAG.LLM_Run(str(user_query))
         print(answer)
         #CHANGE_LLM.config(state=tk.NORMAL)
         VIEW_BOX.config(state=tk.NORMAL)
@@ -157,7 +157,7 @@ def main():
     app.mainloop()
 
     INDICATOR = tk.Entry(app, bg="red", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
-    INDICATOR.place(relx=0.05, rely=0.92, relwidth=0.4, relheight=0.01)
+    INDICATOR.place(relx=0.05, rely=0.94, relwidth=0.4, relheight=0.02)
 
 
 if __name__ == "__main__":
