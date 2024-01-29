@@ -4,8 +4,8 @@ import threading
 from PIL import Image, ImageTk
 import io
 import base64
-#import RAG
-#import Test_LLM
+import RAG
+import Test_LLM
 
 
 from tkinter import messagebox
@@ -30,7 +30,6 @@ def dark_title_bar(window):
     value = 2
     value = ct.c_int(value)
     set_window_attribute(hwnd, rendering_policy, ct.byref(value), ct.sizeof(value))
-
 
 def imagen(image_path, screen_width, screen_height, widget):
     def load_image():
@@ -94,14 +93,10 @@ def Request_Info(user_query):
 
         QUERY_BT.config(text="▫▫▫▫", fg="white")
 
-        return
         if model_no == 1:
-               # answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
-                pass
+                answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
         else:
-               # answer = RAG.LLM_Run(str(user_query))
-               pass
-        #print(answer)
+               answer = RAG.LLM_Run(str(user_query))
 
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
