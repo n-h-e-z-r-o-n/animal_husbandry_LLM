@@ -111,15 +111,15 @@ def Request_Info(user_query):
     threading.Thread(target=start).start()
 
 
-def display_hide_chats(widget):
+def display_hide_chats(widget1, widget2):
     global VIEW_BOX, D_HIDE, display
     if display == 0:
-        widget.config(text="<")
-        VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
+        widget1.config(text="<")
+        widget2.place(relx=0, rely=0, relheight=1, relwidth=1)
         display = 0
     elif  display == 1:
-        widget.config(text=">")
-        VIEW_BOX.place_forget()
+        widget1.config(text=">")
+        widget2.place_forget()
         display = 1
 
 
@@ -155,9 +155,7 @@ def main():
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
-    D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = display_hide_chats)
-    D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
-    imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
+
 
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
@@ -165,6 +163,10 @@ def main():
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
+
+    D_HIDE = tk.Button(app, bg=bg_color, text=">", fg="white", compound=tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command=display_hide_chats)
+    D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
+    imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
 
     CHANGE_LLM = tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
