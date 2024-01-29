@@ -114,7 +114,7 @@ def display_hide_chats():
 
 
 def main():
-    global VIEW_BOX, QUERY_BT, CHANGE_LLM, INDICATOR, app
+    global VIEW_BOX, QUERY_BT, CHANGE_LLM, INDICATOR, D_HIDE
     # bg_color = "#1B1B1B"
     # bg_color = "#212122"
     bg_color = "#1F201F"
