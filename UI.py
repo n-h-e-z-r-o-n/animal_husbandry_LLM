@@ -112,16 +112,16 @@ def Request_Info(user_query):
 
 
 def display_hide_chats(widget1, widget2):
-    print()
+    print("change", display)
     global VIEW_BOX, D_HIDE, display
     if display == 0:
         widget1.config(text="<")
         widget2.place(relx=0, rely=0, relheight=1, relwidth=1)
-        display = 0
+        display = 1
     elif  display == 1:
         widget1.config(text=">")
         widget2.place_forget()
-        display = 1
+        display = 0
 
 
 def main():
