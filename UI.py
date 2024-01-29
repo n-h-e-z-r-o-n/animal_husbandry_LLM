@@ -146,18 +146,20 @@ def main():
 
     BACKGROUND = tk.Label(app)
     BACKGROUND.place(relheight=1, relwidth=1, relx=0, rely=0)
-
     imagen("./assets/bg_image.jpg", 950, 700, BACKGROUND)
+
+    TITAL = tk.Label(app, text='ANIMAL HUSBANDRY', fg="white", compound = tk.CENTER,   font=("Georgia", 23, "bold"), bg=bg_color, borderwidth=0, border=0)
+    TITAL.place(relx=0.15, rely=0, relheight=0.15, relwidth=0.7)
+    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 203724.png", int(950 * 0.7), int(700 * 0.15), TITAL)
 
     VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
-    imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
+    imagen("./assets/bg_image2.png", int(950*0.9), int(700*0.7), VIEW_BOX_canvas)
 
 
 
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
-    #VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
