@@ -114,11 +114,12 @@ def display_hide_chats():
 
     if display == 1:
         D_HIDE.config(text="<")
-        VIEW_BOX.
+        VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
         display = 0
     else:
         D_HIDE.config(text=">")
-
+        if VIEW_BOX.winfo_ismapped():
+            VIEW_BOX.place_forget()
         display = 1
 
 
@@ -159,7 +160,7 @@ def main():
     imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
-    #VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
+    VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
