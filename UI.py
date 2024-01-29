@@ -68,6 +68,7 @@ def ask_binary_choice():
 
 def Request_Info(user_query):
 
+
     def start(user_query=user_query):
         global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR
         if status == 1:
