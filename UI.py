@@ -64,8 +64,9 @@ def ask_binary_choice():
 
 
 def Request_Info(user_query):
+    global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR, ap
     INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.003)
-    # app.after(5000, INDICATOR.place_forget())
+    
     def start(user_query=user_query):
         global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR, app
         if status == 1:
