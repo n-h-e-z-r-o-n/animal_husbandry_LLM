@@ -4,8 +4,8 @@ import threading
 from PIL import Image, ImageTk
 import io
 import base64
-#import RAG
-#import Test_LLM
+import RAG
+import Test_LLM
 
 
 from tkinter import messagebox
@@ -93,11 +93,11 @@ def Request_Info(user_query):
 
 
         if model_no == 1:
-                #answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
-                pass
+                answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
+
         else:
-                #answer = RAG.LLM_Run(str(user_query))
-                pass
+                answer = RAG.LLM_Run(str(user_query))
+
         print(answer)
 
         VIEW_BOX.config(state=tk.NORMAL)
@@ -140,7 +140,7 @@ def main():
 
     VIEW_BOX_canvas = tk.Frame(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
-    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 160322.png", int(950 * 0.25), int(700 * 0.04), VIEW_BOX_canvas)
+    #imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 160322.png", int(950 * 0.25), int(700 * 0.04), VIEW_BOX_canvas)
     # VIEW_DISPLAY, welcome_page_root = attach_scroll(VIEW_BOX)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
@@ -148,8 +148,7 @@ def main():
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
-    import pywinstyles
-    #pywinstyles.set_opacity(VIEW_BOX, color='#2a1863')
+  
 
     CHANGE_LLM = tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
