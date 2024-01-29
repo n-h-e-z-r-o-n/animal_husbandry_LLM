@@ -109,9 +109,10 @@ def Request_Info(user_query):
         QUERY_BT.config(text="►", fg="white")
         status = 0
     threading.Thread(target=start).start()
+
+
 def display_hide_chats():
     global VIEW_BOX, D_HIDE, display
-
     if display == 1:
         D_HIDE.config(text="<")
         VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
@@ -165,7 +166,6 @@ def main():
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
-
     CHANGE_LLM = tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
     imagen(r"./assets/button_bg.png", int(950*0.25), int(700*0.04), CHANGE_LLM)
@@ -174,11 +174,9 @@ def main():
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
     QUERY_ENTRY.bind("<Return>", lambda e: Request_Info(QUERY_ENTRY.get()))
 
-
     QUERY_BT = tk.Button(app, bg=bg_color,   activebackground=bg_color, compound = tk.CENTER, fg="white", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda: Request_Info(QUERY_ENTRY.get()))
     QUERY_BT.place(relx=0.965, rely=0.92, relheight=0.07, relwidth=0.03)
     imagen("./assets/button_bg2.png", int(950 * 0.03), int(700 * 0.07), QUERY_BT)
-
 
     INDICATOR = tk.Label(app, bg="green", borderwidth=0, border=0)
     INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.002)
