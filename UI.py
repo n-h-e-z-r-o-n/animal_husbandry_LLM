@@ -108,6 +108,8 @@ def Request_Info(user_query):
         QUERY_BT.config(text="►", fg="white")
         status = 0
     threading.Thread(target=start).start()
+def display_hide_chats():
+    global VIEW_BOX
 
 
 def main():
@@ -142,8 +144,8 @@ def main():
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
-    hide =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
-    hide.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
+    D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: display_hide_chats())
+    DHIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
     imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), hide)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
