@@ -16,7 +16,7 @@ status = 0
 shift_scroll = 0
 grid_widgets = []
 model_no = 1
-display = 1
+display = 0
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -111,16 +111,16 @@ def Request_Info(user_query):
     threading.Thread(target=start).start()
 
 
-def display_hide_chats(widget1, widget2):
+def display_hide_chats():
     global VIEW_BOX, D_HIDE, display
     print("change", display)
     if display == 0:
-        widget1.config(text="<")
-        widget2.place(relx=0, rely=0, relheight=1, relwidth=1)
+        D_HIDE.config(text="<")
+        VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
         display = 1
     elif  display == 1:
-        widget1.config(text=">")
-        widget2.place_forget()
+        D_HIDE.config(text=">")
+        VIEW_BOX.place_forget()
         display = 0
 
 
@@ -165,7 +165,7 @@ def main():
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
 
-    D_HIDE = tk.Button(app, bg=bg_color, text=">", fg="white", compound=tk.CENTER, activebackground=bg_color, anchor="w", font=("Georgia", 12, "bold"), borderwidth=0, border=0, command=lambda :display_hide_chats(D_HIDE, VIEW_BOX))
+    D_HIDE = tk.Button(app, bg=bg_color, text=">", fg="white", compound=tk.CENTER, activebackground=bg_color, anchor="w", font=("Georgia", 12, "bold"), borderwidth=0, border=0, command=lambda : display_hide_chats())
     D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
     imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
 
