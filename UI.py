@@ -10,7 +10,7 @@ import Test_LLM
 
 from tkinter import messagebox
 
-VIEW_BOX = QUERY_BT = INDICATOR = CHANGE_LLM = app = None
+VIEW_BOX = QUERY_BT = INDICATOR = CHANGE_LLM = D_HIDE = None
 root = None
 status = 0
 shift_scroll = 0
@@ -68,7 +68,7 @@ def ask_binary_choice():
 def Request_Info(user_query):
 
     def start(user_query=user_query):
-        global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR, app
+        global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR
         if status == 1:
             return
         else:
@@ -109,7 +109,8 @@ def Request_Info(user_query):
         status = 0
     threading.Thread(target=start).start()
 def display_hide_chats():
-    global VIEW_BOX
+    global VIEW_BOX, D_HIDE
+    D_HIDE.config(text="<")
 
 
 def main():
@@ -145,8 +146,8 @@ def main():
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
     D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: display_hide_chats())
-    DHIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
-    imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), hide)
+    D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
+    imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
     #VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
