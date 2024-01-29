@@ -156,7 +156,7 @@ def main():
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
-    #D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command=lambda: display_hide_chats())
+    D_HIDE =  tk.Button(app, bg=bg_color,  text=">", fg="white",  compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0)
     D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
     imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
 
@@ -182,8 +182,6 @@ def main():
     INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.002)
 
     app.mainloop()
-
-
 
 
 if __name__ == "__main__":
