@@ -65,11 +65,12 @@ def ask_binary_choice():
 
 def Request_Info(user_query):
     def start(user_query=user_query):
-        global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR
+        global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR, app
         if status == 1:
             return
         else:
             if str(user_query) == "":
+                print("q empty")
                 INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.003)
                 app.after(1000, INDICATOR.place_forget())
                 return
@@ -107,7 +108,7 @@ def Request_Info(user_query):
 
 
 def main():
-    global VIEW_BOX, QUERY_BT, CHANGE_LLM, INDICATOR
+    global VIEW_BOX, QUERY_BT, CHANGE_LLM, INDICATOR, app
     # bg_color = "#1B1B1B"
     # bg_color = "#212122"
     bg_color = "#1F201F"
