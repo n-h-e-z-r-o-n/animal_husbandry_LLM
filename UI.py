@@ -72,11 +72,11 @@ def Request_Info(user_query):
         else:
             if str(user_query) == "":
                 print("q empty")
-
+                INDICATOR.config(bg="red")
                 return
             else:
                  status = 1
-                 INDICATOR.place_forget()
+                 INDICATOR.config(bg="green")
 
 
 
@@ -163,7 +163,7 @@ def main():
 
 
     INDICATOR = tk.Label(app, bg="green", borderwidth=0, border=0)
-    INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.003)
+    INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.002)
 
     app.mainloop()
 
