@@ -156,10 +156,15 @@ def main():
     QUERY_BT = tk.Button(app, bg=bg_color,   activebackground=bg_color, compound = tk.CENTER, fg="white", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda: Request_Info(QUERY_ENTRY.get()))
     QUERY_BT.place(relx=0.965, rely=0.92, relheight=0.07, relwidth=0.03)
     imagen("./assets/button_bg2.png", int(950 * 0.03), int(700 * 0.07), QUERY_BT)
+
+
+    INDICATOR = tk.Label(app, bg="red", borderwidth=0, border=0)
+    INDICATOR.place(relx=0.05, rely=0.9, relwidth=0.4, relheight=0.00)
+
+
     app.mainloop()
 
-    INDICATOR = tk.Label(app, bg="red", , justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
-    INDICATOR.place(relx=0.05, rely=0.9, relwidth=0.4, relheight=0.066)
+
 
 
 if __name__ == "__main__":
