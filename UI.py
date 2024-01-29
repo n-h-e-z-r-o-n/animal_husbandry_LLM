@@ -92,7 +92,7 @@ def Request_Info(user_query):
 
         QUERY_BT.config(text="▫▫▫▫", fg="white")
 
-        
+        return
         if model_no == 1:
                # answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
                 pass
