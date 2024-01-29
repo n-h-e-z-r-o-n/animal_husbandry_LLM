@@ -67,7 +67,7 @@ def ask_binary_choice():
 
 
 def Request_Info(user_query):
-
+    if display == 0:
 
     def start(user_query=user_query):
         global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR
@@ -75,7 +75,6 @@ def Request_Info(user_query):
             return
         else:
             if str(user_query) == "":
-                print("q empty")
                 INDICATOR.config(bg="red")
                 return
             else:
