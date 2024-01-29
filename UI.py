@@ -4,8 +4,8 @@ import threading
 from PIL import Image, ImageTk
 import io
 import base64
-import RAG
-import Test_LLM
+#import RAG
+#import Test_LLM
 
 
 from tkinter import messagebox
@@ -92,14 +92,14 @@ def Request_Info(user_query):
 
         QUERY_BT.config(text="▫▫▫▫", fg="white")
 
-
+        
         if model_no == 1:
-                answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
-
+               # answer = Test_LLM.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
+                pass
         else:
-                answer = RAG.LLM_Run(str(user_query))
-
-        print(answer)
+               # answer = RAG.LLM_Run(str(user_query))
+               pass
+        #print(answer)
 
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
