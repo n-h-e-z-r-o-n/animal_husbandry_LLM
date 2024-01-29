@@ -159,7 +159,7 @@ def main():
 
 
     INDICATOR = tk.Label(app, bg="red", borderwidth=0, border=0)
-    INDICATOR.place(relx=0.05, rely=0.991, relwidth=0.4, relheight=0.003)
+    INDICATOR.place(relx=0.3, rely=0.991, relwidth=0.4, relheight=0.003)
 
 
     app.mainloop()
