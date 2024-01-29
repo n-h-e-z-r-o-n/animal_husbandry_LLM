@@ -16,7 +16,7 @@ status = 0
 shift_scroll = 0
 grid_widgets = []
 model_no = 1
-display = 1
+display = 0
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -181,7 +181,7 @@ def main():
 
     INDICATOR = tk.Label(app, bg="green", borderwidth=0, border=0)
     INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.002)
-
+    display_hide_chats()
     app.mainloop()
 
 
