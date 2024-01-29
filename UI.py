@@ -114,11 +114,11 @@ def display_hide_chats():
 
     if display == 1:
         D_HIDE.config(text="<")
-
+        VIEW_BOX.
         display = 0
     else:
         D_HIDE.config(text=">")
-        
+
         display = 1
 
 
