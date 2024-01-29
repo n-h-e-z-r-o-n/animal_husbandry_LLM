@@ -140,7 +140,7 @@ def main():
 
     VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
-    imagen(r"C:\Users\HEZRON WEKESA\Downloads\pexels-matthis-volquardsen-2157000.jpg", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
+    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 160322.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
