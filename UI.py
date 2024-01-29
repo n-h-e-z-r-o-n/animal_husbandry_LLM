@@ -10,7 +10,7 @@ import base64
 
 from tkinter import messagebox
 
-VIEW_BOX = QUERY_BT = CHANGE_LLM = None
+VIEW_BOX = QUERY_BT = INDICATOR = CHANGE_LLM = app = None
 root = None
 status = 0
 shift_scroll = 0
@@ -65,11 +65,13 @@ def ask_binary_choice():
 
 def Request_Info(user_query):
     def start(user_query=user_query):
-        global VIEW_BOX, QUERY_BT, model_no, status
+        global VIEW_BOX, QUERY_BT, model_no, status, INDICATOR
         if status == 1:
             return
         else:
             if str(user_query) == "":
+                INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.003)
+                app.after(1000, INDICATOR.place_forget())
                 return
             else:
                  status = 1
@@ -105,7 +107,7 @@ def Request_Info(user_query):
 
 
 def main():
-    global VIEW_BOX, QUERY_BT, CHANGE_LLM
+    global VIEW_BOX, QUERY_BT, CHANGE_LLM, INDICATOR
     # bg_color = "#1B1B1B"
     # bg_color = "#212122"
     bg_color = "#1F201F"
