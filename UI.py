@@ -117,7 +117,7 @@ def main():
     bg_color = "#1F201F"
 
     app = tk.Tk()
-
+    app.wm_attributes("-transparentcolor", "blue")
     app.config(bg=bg_color)
     app.maxsize(950, 700)
     app.minsize(950, 700)
@@ -135,21 +135,22 @@ def main():
 
     BACKGROUND = tk.Label(app)
     BACKGROUND.place(relheight=1, relwidth=1, relx=0, rely=0)
-    #app.wm_attributes("-transparentcolor", "blue")
+
     imagen("./assets/bg_image.jpg", 950, 700, BACKGROUND)
 
     VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
     imagen("./assets/bg_image2.png", int(950*0.9),int(700*0.7), VIEW_BOX_canvas)
 
+    hide =  tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
+    hide.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
 
     VIEW_BOX = tk.Text(VIEW_BOX_canvas, bg=bg_color, borderwidth=0, border=0, font=(13), wrap="word")
     #VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
     VIEW_BOX.tag_configure("user_config", foreground="#B2BEB5", justify=tk.LEFT)  # user queries  config's
     VIEW_BOX.tag_configure("llm_config", foreground="#54626F", justify=tk.LEFT)  # llm responses config's
     VIEW_BOX.config(state=tk.DISABLED)
-    import pywinstyles
-    #pywinstyles.set_opacity(VIEW_BOX, color='#2a1863')
+
 
     CHANGE_LLM = tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
