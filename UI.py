@@ -97,7 +97,7 @@ def Request_Info(user_query):
                 #answer = RAG.LLM_Run(str(user_query))
                 pass
         print(answer)
-        #CHANGE_LLM.config(state=tk.NORMAL)
+
         VIEW_BOX.config(state=tk.NORMAL)
         VIEW_BOX.insert(tk.END, f"\n{answer}\n", 'llm_config')
         VIEW_BOX.see(tk.END)  # Scroll to the end of the text widget
