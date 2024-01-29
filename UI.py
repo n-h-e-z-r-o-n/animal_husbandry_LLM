@@ -112,10 +112,14 @@ def Request_Info(user_query):
 def display_hide_chats():
     global VIEW_BOX, D_HIDE, display
 
-    if display = 1:
+    if display == 1:
         D_HIDE.config(text="<")
-    else
+
+        display = 0
+    else:
+        D_HIDE.config(text=">")
         
+        display = 1
 
 
 def main():
