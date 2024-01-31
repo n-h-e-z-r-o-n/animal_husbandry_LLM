@@ -54,7 +54,7 @@ with Gradient() as gradient:
             while True:
                 try:  # Try to fine-tune the model with the chunk of samples, If an error occurs, retry
 
-                    new_model_adapter.fine_tune(samples=samples[s: (s + i)])
+                    new_model_adapter.fine_tune(samples=samples[s: (s + i)]).number_of_trainable_tokens
                     break
                 except:
                     pass

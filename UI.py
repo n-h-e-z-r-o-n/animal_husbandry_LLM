@@ -82,8 +82,6 @@ def Request_Info(user_query):
                  status = 1
                  INDICATOR.config(bg="green")
 
-
-
         print(user_query)
 
         VIEW_BOX.config(state=tk.NORMAL)
@@ -130,9 +128,14 @@ def main():
     app = tk.Tk()
     app.wm_attributes("-transparentcolor", "blue")
     app.config(bg=bg_color)
-    app.maxsize(950, 700)
-    app.minsize(950, 700)
-    app.title('Lage Language Model')
+    app.iconbitmap("./assets/ICON.ico")
+    screen_width = app.winfo_screenwidth()
+    screen_height = app.winfo_screenheight()
+    app_width = 1000
+    app_height = 1000
+    #app.maxsize(app_width, app_height)
+    app.minsize(app_width, app_height)
+    app.title('LLM')
     # app.attributes("-toolwindow", 1)
     # app.attributes("-topmost", 1)
     # app.overrideredirect(True)
@@ -146,16 +149,15 @@ def main():
 
     BACKGROUND = tk.Label(app)
     BACKGROUND.place(relheight=1, relwidth=1, relx=0, rely=0)
-    imagen("./assets/bg_image.jpg", 950, 700, BACKGROUND)
+    imagen("./assets/bg_image.jpg", app_width, app_height, BACKGROUND)
 
     TITAL = tk.Label(app, text='ANIMAL HUSBANDRY', fg="white", compound = tk.CENTER,   font=("Georgia", 23, "bold"), bg=bg_color, borderwidth=0, border=0)
     TITAL.place(relx=0.15, rely=0, relheight=0.15, relwidth=0.7)
-    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 203724.png", int(950 * 0.7), int(700 * 0.15), TITAL)
+    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 203724.png", int(app_width * 0.7), int(app_height * 0.15), TITAL)
 
     VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
-    imagen("./assets/bg_image2.png", int(950*0.9), int(700*0.7), VIEW_BOX_canvas)
-
+    imagen("./assets/bg_image2.png", int(app_width*0.9), int(app_height*0.7), VIEW_BOX_canvas)
 
 
 
@@ -166,11 +168,11 @@ def main():
 
     D_HIDE = tk.Button(app, bg=bg_color, text=">", fg="white", compound=tk.CENTER, activebackground=bg_color, anchor="w", font=("Georgia", 12, "bold"), borderwidth=0, border=0, command=lambda : display_hide_chats())
     D_HIDE.place(relx=0.001, rely=0.45, relwidth=0.02, relheight=0.05)
-    imagen("./assets/bt1.png", int(950 * 0.02), int(700 * 0.5), D_HIDE)
+    imagen("./assets/bt1.png", int(app_width * 0.02), int(app_height * 0.5), D_HIDE)
 
     CHANGE_LLM = tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
-    imagen(r"./assets/button_bg.png", int(950*0.25), int(700*0.04), CHANGE_LLM)
+    imagen(r"./assets/button_bg.png", int(app_width*0.25), int(app_height*0.04), CHANGE_LLM)
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
@@ -178,13 +180,27 @@ def main():
 
     QUERY_BT = tk.Button(app, bg=bg_color,   activebackground=bg_color, compound = tk.CENTER, fg="white", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda: Request_Info(QUERY_ENTRY.get()))
     QUERY_BT.place(relx=0.965, rely=0.92, relheight=0.07, relwidth=0.03)
-    imagen("./assets/button_bg2.png", int(950 * 0.03), int(700 * 0.07), QUERY_BT)
+    imagen("./assets/button_bg2.png", int(app_width * 0.03), int(app_height * 0.07), QUERY_BT)
 
     INDICATOR = tk.Label(app, bg="green", borderwidth=0, border=0)
     INDICATOR.place(relx=0.3, rely=0.994, relwidth=0.4, relheight=0.002)
 
+    def print_window_size(event=None):
 
 
+        dynamic_width = app.winfo_width()
+        dynamic_height = app.winfo_height()
+
+        imagen("./assets/bg_image.jpg", dynamic_width, dynamic_height, BACKGROUND)
+        imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 203724.png", int(dynamic_width * 0.7), int(dynamic_height * 0.15), TITAL)
+        imagen("./assets/button_bg2.png", int(dynamic_width * 0.03), int(dynamic_height * 0.07), QUERY_BT)
+        imagen("./assets/bg_image2.png", int(dynamic_width * 0.9), int(dynamic_height * 0.7), VIEW_BOX_canvas)
+        imagen("./assets/bt1.png", int(dynamic_width * 0.02), int(dynamic_height * 0.5), D_HIDE)
+        imagen(r"./assets/button_bg.png", int(dynamic_width * 0.25), int(dynamic_height * 0.04), CHANGE_LLM)
+
+
+
+    BACKGROUND.bind("<Configure>", print_window_size)
     app.mainloop()
 
 
