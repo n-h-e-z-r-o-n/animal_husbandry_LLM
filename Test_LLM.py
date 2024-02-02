@@ -10,10 +10,10 @@ import os
 
 # # Set the environment variables for gradient.ai
 os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J"
-os.environ['GRADIENT_WORKSPACE_ID'] = "b04a475d-65d1-4e98-82f2-62d218be3989_workspace"
+os.environ['GRADIENT_WORKSPACE_ID'] = "1b99bbdd-1360-4321-a152-fc8822334cd0_workspace"
 
 
-fine_tuned_Model_Id = "4f2d6d3c-4685-493d-b945-08da7f120021_model_adapter"
+fine_tuned_Model_Id = "4e3d96df-8ba6-4fa6-8e26-1523d2f096d2_model_adapter"
 
 #  initializes a GradientLLM with our fine-tuned model by specifying our model ID.
 llm = GradientLLM(

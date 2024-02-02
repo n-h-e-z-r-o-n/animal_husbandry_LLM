@@ -153,7 +153,7 @@ def main():
 
     TITAL = tk.Label(app, text='ANIMAL HUSBANDRY', fg="white", compound = tk.CENTER,   font=("Georgia", 23, "bold"), bg=bg_color, borderwidth=0, border=0)
     TITAL.place(relx=0.15, rely=0, relheight=0.15, relwidth=0.7)
-    imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 203724.png", int(app_width * 0.7), int(app_height * 0.15), TITAL)
+    imagen("./assets/title.png", int(app_width * 0.7), int(app_height * 0.15), TITAL)
 
     VIEW_BOX_canvas = tk.Label(app, bg=bg_color, borderwidth=0, border=0)
     VIEW_BOX_canvas.place(relx=0.05, rely=0.1, relheight=0.7, relwidth=0.9)
@@ -172,7 +172,7 @@ def main():
 
     CHANGE_LLM = tk.Button(app, bg='white', fg="white", text="Fine_tuned only", compound = tk.CENTER, activebackground=bg_color, anchor="w", font=("Courier New", 12, "bold"), borderwidth=0, border=0, command = lambda: ask_binary_choice())
     CHANGE_LLM.place(relx=0.05, rely=0.865, relwidth=0.25, relheight=0.04)
-    imagen(r"./assets/button_bg.png", int(app_width*0.25), int(app_height*0.04), CHANGE_LLM)
+    imagen("./assets/button_bg.png", int(app_width*0.25), int(app_height*0.04), CHANGE_LLM)
 
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
@@ -192,11 +192,11 @@ def main():
         dynamic_height = app.winfo_height()
 
         imagen("./assets/bg_image.jpg", dynamic_width, dynamic_height, BACKGROUND)
-        imagen(r"C:\Users\HEZRON WEKESA\OneDrive\Pictures\Screenshots\Screenshot 2024-01-29 203724.png", int(dynamic_width * 0.7), int(dynamic_height * 0.15), TITAL)
+        imagen("./assets/title.png", int(dynamic_width * 0.7), int(dynamic_height * 0.15), TITAL)
         imagen("./assets/button_bg2.png", int(dynamic_width * 0.03), int(dynamic_height * 0.07), QUERY_BT)
         imagen("./assets/bg_image2.png", int(dynamic_width * 0.9), int(dynamic_height * 0.7), VIEW_BOX_canvas)
         imagen("./assets/bt1.png", int(dynamic_width * 0.02), int(dynamic_height * 0.5), D_HIDE)
-        imagen(r"./assets/button_bg.png", int(dynamic_width * 0.25), int(dynamic_height * 0.04), CHANGE_LLM)
+        imagen("./assets/button_bg.png", int(dynamic_width * 0.25), int(dynamic_height * 0.04), CHANGE_LLM)
 
 
 

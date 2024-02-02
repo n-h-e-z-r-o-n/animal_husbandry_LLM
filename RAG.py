@@ -11,12 +11,12 @@ from haystack.components.builders import PromptBuilder
 from haystack.components.builders.answer_builder import AnswerBuilder
 import os
 
+os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J"
+os.environ['GRADIENT_WORKSPACE_ID'] = "1b99bbdd-1360-4321-a152-fc8822334cd0_workspace"
 
 document_store = InMemoryDocumentStore()
 writer = DocumentWriter(document_store=document_store)
 
-os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J"
-os.environ['GRADIENT_WORKSPACE_ID'] = "b04a475d-65d1-4e98-82f2-62d218be3989_workspace"
 
 document_embedder = GradientDocumentEmbedder(
     access_token=os.environ["GRADIENT_ACCESS_TOKEN"],
@@ -41,10 +41,12 @@ text_embedder = GradientTextEmbedder(
     workspace_id=os.environ["GRADIENT_WORKSPACE_ID"],
 )
 
+fine_tuned_Model_Id = "4e3d96df-8ba6-4fa6-8e26-1523d2f096d2_model_adapter"
+
 generator = GradientGenerator(
     access_token=os.environ["GRADIENT_ACCESS_TOKEN"],
     workspace_id=os.environ["GRADIENT_WORKSPACE_ID"],
-    base_model_slug="llama2-7b-chat",
+    model_adapter_id=fine_tuned_Model_Id,
     max_generated_token_count=350,
 )
 
@@ -83,4 +85,4 @@ def LLM_Run(question):
 
 
 #Query = "What is animal husbandry??"
-#print(LLM_Run(Query))
+# print(LLM_Run(Query))
