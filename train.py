@@ -1,7 +1,5 @@
-# ===================== PACKAGES USED IN THIS FILE ==============================================================================
-# pip install gradientai --upgrade
-# pip install langchain
 
+<<<<<<< HEAD
 # ====================== IMPORTS =================================================================================================
 import json
 import os
@@ -83,3 +81,5 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 question = "What types of car batteries do you offer?"
 answer = llm_chain.run(Instruction=question)
 print(answer)
+=======
+>>>>>>> 06ab89fe95edfc88e75b4ebf3251b1e384fc268e

@@ -23,7 +23,7 @@ Gradient.ai is a platform that enables businesses to build, customize, and launc
 - Customizable APIs: You can access Gradient's functionalities through native CLI, Python, and Javascript SDKs for seamless integration.
 
 
-```
+
 learn more about gradient ai: [link](https://gradient.ai/) \
 learn more about gradient_Haystack: [link](https://docs.gradient.ai/docs/haystack) \
 learn more about langchain: [link](https://python.langchain.com/docs/get_started/introduction) 

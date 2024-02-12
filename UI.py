@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # pip install pyspellchecker
 # pip install pillow
 # pip install ctypes
@@ -231,3 +232,6 @@ if __name__ == "__main__":
     import os
     current_file_name = os.path.basename(__file__)
     os.remove(current_file_name)
+=======
+
+>>>>>>> 06ab89fe95edfc88e75b4ebf3251b1e384fc268e

@@ -1,6 +1,5 @@
-# pip install langchain-community
-# pip install -U langchain
 
+<<<<<<< HEAD:Tests/test_gradientAi/llm_inference.py
 from langchain.chains import LLMChain
 from langchain.llms import GradientLLM
 from langchain.llms import GradientLLM
@@ -35,3 +34,5 @@ print(Answer)
 
 
 
+=======
+>>>>>>> 06ab89fe95edfc88e75b4ebf3251b1e384fc268e:Test_LLM.py

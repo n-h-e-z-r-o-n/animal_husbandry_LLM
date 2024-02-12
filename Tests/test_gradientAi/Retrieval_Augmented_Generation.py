@@ -1,5 +1,5 @@
-# pip install -U gradient_haystack
 
+<<<<<<< HEAD:Tests/test_gradientAi/Retrieval_Augmented_Generation.py
 from gradient_haystack.embedders.gradient_document_embedder import GradientDocumentEmbedder
 from gradient_haystack.embedders.gradient_text_embedder import GradientTextEmbedder
 from gradient_haystack.generator.base import GradientGenerator
@@ -87,3 +87,5 @@ def LLM_Run(question):
 
 Query = "When is diarrhoea very risky???"
 print(LLM_Run(Query))
+=======
+>>>>>>> 06ab89fe95edfc88e75b4ebf3251b1e384fc268e:RAG.py
