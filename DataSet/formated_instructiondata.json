@@ -1,0 +1,775 @@
+[
+  {
+    "disease": "Blackleg",
+    "questions": [
+      {
+        "question": "What are the common symptoms of Blackleg in cattle?",
+        "answer": "Common symptoms of Blackleg in cattle include sudden onset of lameness, swelling and crepitus (crackling sensation) in affected muscles, fever, depression, and loss of appetite. Affected cattle may die rapidly without showing any signs of illness."
+      },
+      {
+        "question": "How is Blackleg in cattle typically treated?",
+        "answer": "Treatment of Blackleg in cattle typically involves aggressive antibiotic therapy to control bacterial infection, supportive care to alleviate symptoms such as fever and pain, and surgical drainage or debridement of affected tissues in severe cases."
+      },
+      {
+        "question": "What are the main causes of Blackleg in cattle?",
+        "answer": "Blackleg in cattle is caused by the bacterium Clostridium chauvoei, which is commonly found in the soil. The disease typically occurs when the bacterium enters the body through wounds or punctures, often during grazing or other activities that cause skin abrasions."
+      },
+      {
+        "question": "What measures can be taken to prevent Blackleg in cattle?",
+        "answer": "Measures that can be taken to prevent Blackleg in cattle include vaccination of calves with Clostridium chauvoei bacterin-toxoid vaccines, maintaining proper herd nutrition and health to minimize stress, and avoiding grazing in areas with a history of Blackleg outbreaks."
+      }
+    ]
+  },
+  {
+    "disease": "Infectious Bovine Keratoconjunctivitis (IBK)",
+    "questions": [
+      {
+        "question": "What are the common symptoms of Infectious Bovine Keratoconjunctivitis (IBK) in cattle?",
+        "answer": "Common symptoms of Infectious Bovine Keratoconjunctivitis (IBK) in cattle include excessive tearing, redness and swelling of the eye tissues, corneal ulcers, and temporary or permanent blindness. Affected cattle may also show signs of pain and discomfort."
+      },
+      {
+        "question": "How is Infectious Bovine Keratoconjunctivitis (IBK) in cattle typically treated?",
+        "answer": "Treatment of Infectious Bovine Keratoconjunctivitis (IBK) in cattle typically involves topical or systemic administration of antibiotics to control bacterial infection, anti-inflammatory medications to reduce inflammation and pain, and supportive care to promote healing."
+      },
+      {
+        "question": "What are the main causes of Infectious Bovine Keratoconjunctivitis (IBK) in cattle?",
+        "answer": "Infectious Bovine Keratoconjunctivitis (IBK) in cattle is caused by the bacterium Moraxella bovis, which can infect the eyes and surrounding tissues. The disease often occurs when cattle are exposed to environmental factors such as dust, ultraviolet light, and flies."
+      },
+      {
+        "question": "What measures can be taken to prevent Infectious Bovine Keratoconjunctivitis (IBK) in cattle?",
+        "answer": "Measures that can be taken to prevent Infectious Bovine Keratoconjunctivitis (IBK) in cattle include maintaining clean and dry living conditions, implementing fly control measures to reduce irritation and transmission, and promptly treating any signs of eye infections."
+      }
+    ]
+  },
+  {
+    "disease": "Bovine Viral Diarrhea (BVD)",
+    "questions": [
+      {
+        "question": "What are the common symptoms of Bovine Viral Diarrhea (BVD) in cattle?",
+        "answer": "Common symptoms of Bovine Viral Diarrhea (BVD) in cattle include diarrhea, fever, depression, decreased milk production, nasal and ocular discharge, and reproductive disorders such as abortion and birth defects in calves."
+      },
+      {
+        "question": "How is Bovine Viral Diarrhea (BVD) in cattle typically treated?",
+        "answer": "Treatment of Bovine Viral Diarrhea (BVD) in cattle typically involves supportive care to alleviate symptoms, such as fluid therapy for dehydration, anti-inflammatory medications for fever and pain relief, and antibiotics to control secondary bacterial infections."
+      },
+      {
+        "question": "What are the main causes of Bovine Viral Diarrhea (BVD) in cattle?",
+        "answer": "Bovine Viral Diarrhea (BVD) in cattle is caused by the Bovine Viral Diarrhea Virus (BVDV), which belongs to the Pestivirus genus. The virus can infect cattle of all ages and breeds and is transmitted through direct contact with infected animals or contaminated environments."
+      },
+      {
+        "question": "What measures can be taken to prevent Bovine Viral Diarrhea (BVD) in cattle?",
+        "answer": "Measures that can be taken to prevent Bovine Viral Diarrhea (BVD) in cattle include vaccination of susceptible animals with modified-live or inactivated vaccines, maintaining strict biosecurity to prevent introduction of the virus into the herd, and testing and culling persistently infected animals."
+      }
+    ]
+  },
+  
+    {
+      "disease": "Infectious Bovine Rhinotracheitis (IBR)",
+      "questions": [
+        {
+          "question": "What are the common symptoms of Infectious Bovine Rhinotracheitis (IBR) in cattle?",
+          "answer": "Common symptoms of Infectious Bovine Rhinotracheitis (IBR) in cattle include fever, nasal discharge, coughing, conjunctivitis, reduced milk production, and abortions in pregnant cows."
+        },
+        {
+          "question": "How is Infectious Bovine Rhinotracheitis (IBR) in cattle typically treated?",
+          "answer": "Treatment of Infectious Bovine Rhinotracheitis (IBR) in cattle typically involves supportive care to alleviate symptoms, such as anti-inflammatory medications for fever and pain relief, and ensuring proper nutrition and hydration. Antibiotics may be used to prevent secondary bacterial infections."
+        },
+        {
+          "question": "What are the main causes of Infectious Bovine Rhinotracheitis (IBR) in cattle?",
+          "answer": "Infectious Bovine Rhinotracheitis (IBR) in cattle is caused by bovine herpesvirus 1 (BoHV-1), a highly contagious virus that affects the respiratory and reproductive systems of cattle. The virus is spread through direct contact with infected animals or through contaminated equipment and facilities."
+        },
+        {
+          "question": "What measures can be taken to prevent Infectious Bovine Rhinotracheitis (IBR) in cattle?",
+          "answer": "Measures that can be taken to prevent Infectious Bovine Rhinotracheitis (IBR) in cattle include vaccination of susceptible animals with modified-live or inactivated vaccines, maintaining strict biosecurity to prevent introduction of the virus into the herd, and isolation and testing of new animals before introduction to the herd."
+        }
+      ]
+    },
+    {
+      "disease": "Clostridial Diseases",
+      "questions": [
+        {
+          "question": "What are the common symptoms of Clostridial Diseases in cattle?",
+          "answer": "Common symptoms of Clostridial Diseases in cattle depend on the specific disease but may include sudden death, fever, diarrhea, abdominal pain, and neurological signs such as muscle tremors and convulsions."
+        },
+        {
+          "question": "How are Clostridial Diseases in cattle typically treated?",
+          "answer": "Treatment of Clostridial Diseases in cattle typically involves supportive care to alleviate symptoms, such as fluid therapy for dehydration and anti-inflammatory medications for fever and pain relief. Antibiotics may be used to control secondary bacterial infections."
+        },
+        {
+          "question": "What are the main causes of Clostridial Diseases in cattle?",
+          "answer": "Clostridial Diseases in cattle are caused by various species of Clostridium bacteria, which are ubiquitous in the environment and can proliferate rapidly under certain conditions. These bacteria produce toxins that can cause severe disease in susceptible animals."
+        },
+        {
+          "question": "What measures can be taken to prevent Clostridial Diseases in cattle?",
+          "answer": "Measures that can be taken to prevent Clostridial Diseases in cattle include vaccination against common pathogens such as Clostridium perfringens (types A, B, C, and D) and Clostridium tetani, maintaining proper sanitation to minimize spore exposure, and prompt treatment of any suspected cases."
+        }
+      ]
+    },
+    {
+      "disease": "Trichomoniasis",
+      "questions": [
+        {
+          "question": "What are the common symptoms of Trichomoniasis in cattle?",
+          "answer": "Common symptoms of Trichomoniasis in cattle include infertility, early embryonic death, extended breeding seasons, and occasional abortions. Bulls may not show any clinical signs but serve as carriers of the parasite."
+        },
+        {
+          "question": "How is Trichomoniasis in cattle typically treated?",
+          "answer": "Treatment of Trichomoniasis in cattle is challenging because the parasite resides in the reproductive tract and is difficult to eliminate with medication. Infected bulls are usually culled from the herd, and strict biosecurity measures are implemented to prevent further transmission."
+        },
+        {
+          "question": "What are the main causes of Trichomoniasis in cattle?",
+          "answer": "Trichomoniasis in cattle is caused by the protozoan parasite Tritrichomonas foetus, which primarily affects the reproductive tract of cattle. The parasite is transmitted during mating and can lead to reproductive losses in cows."
+        },
+        {
+          "question": "What measures can be taken to prevent Trichomoniasis in cattle?",
+          "answer": "Measures that can be taken to prevent Trichomoniasis in cattle include routine testing of breeding bulls for the presence of Tritrichomonas foetus, implementing biosecurity protocols for new animal introductions, maintaining closed herds, and culling of infected animals to prevent disease spread within the herd."
+        }
+
+      ]
+
+    },
+  
+  {
+    "disease": "Lumpy Skin Disease",
+    "questions": [
+      {
+        "question": "What are the common symptoms of Lumpy Skin Disease in cattle?",
+        "answer": "Common symptoms of Lumpy Skin Disease in cattle include fever, nodules or lumps on the skin, especially around the head, neck, and genital area, reduced milk production, and lameness if the feet are affected."
+      },
+      {
+        "question": "How is Lumpy Skin Disease in cattle typically treated?",
+        "answer": "Treatment of Lumpy Skin Disease in cattle typically involves supportive care to alleviate symptoms, such as anti-inflammatory medications for fever and pain relief, and ensuring proper nutrition and hydration. There is no specific antiviral treatment, and affected animals usually recover on their own within a few weeks."
+      },
+      {
+        "question": "What are the main causes of Lumpy Skin Disease in cattle?",
+        "answer": "Lumpy Skin Disease in cattle is caused by a virus belonging to the genus Capripoxvirus. It is primarily transmitted by biting insects such as mosquitoes and flies, which carry the virus from infected to susceptible animals."
+      },
+      {
+        "question": "What measures can be taken to prevent Lumpy Skin Disease in cattle?",
+        "answer": "Measures that can be taken to prevent Lumpy Skin Disease in cattle include vaccination of susceptible animals with live attenuated vaccines, implementing vector control measures to reduce insect populations, and maintaining strict biosecurity to prevent introduction of the virus into the herd."
+      }
+    ]
+  },
+  {
+    "disease": "Blue Tongue",
+    "questions": [
+      {
+        "question": "What are the common symptoms of Blue Tongue in cattle?",
+        "answer": "Common symptoms of Blue Tongue in cattle include fever, swelling of the head and neck, nasal discharge, excessive salivation, ulceration of the mouth and tongue, and lameness due to swelling of the coronary band and hoof."
+      },
+      {
+        "question": "How is Blue Tongue in cattle typically treated?",
+        "answer": "Treatment of Blue Tongue in cattle typically involves supportive care to alleviate symptoms, such as anti-inflammatory medications for fever and pain relief, and ensuring proper nutrition and hydration. There is no specific antiviral treatment, and affected animals usually recover on their own within a few weeks."
+      },
+      {
+        "question": "What are the main causes of Blue Tongue in cattle?",
+        "answer": "Blue Tongue in cattle is caused by an orbivirus transmitted by biting midges of the Culicoides species. The virus primarily affects wild and domestic ruminants and is not directly transmissible to humans."
+      },
+      {
+        "question": "What measures can be taken to prevent Blue Tongue in cattle?",
+        "answer": "Measures that can be taken to prevent Blue Tongue in cattle include vaccination of susceptible animals with inactivated or live attenuated vaccines, implementing vector control measures to reduce midge populations, and maintaining strict biosecurity to prevent introduction of the virus into the herd."
+      }
+    ]
+  },
+  {
+    "disease": "Leptospirosis",
+    "questions": [
+      {
+        "question": "What are the common symptoms of Leptospirosis in cattle?",
+        "answer": "Common symptoms of Leptospirosis in cattle include fever, jaundice (yellowing of the mucous membranes), decreased milk production, reproductive disorders such as abortion and stillbirths, and kidney damage leading to dehydration and lethargy."
+      },
+      {
+        "question": "How is Leptospirosis in cattle typically treated?",
+        "answer": "Treatment of Leptospirosis in cattle typically involves administration of antibiotics such as penicillin or tetracycline to eliminate the bacteria from the bloodstream. Supportive care such as fluid therapy and anti-inflammatory medications may also be necessary, especially in cases of kidney involvement."
+      },
+      {
+        "question": "What are the main causes of Leptospirosis in cattle?",
+        "answer": "Leptospirosis in cattle is caused by infection with Leptospira bacteria, which are shed in the urine of infected animals and can survive in the environment for extended periods. Cattle become infected through contact with contaminated water sources or urine from infected animals."
+      },
+      {
+        "question": "What measures can be taken to prevent Leptospirosis in cattle?",
+        "answer": "Measures that can be taken to prevent Leptospirosis in cattle include vaccination of susceptible animals with commercial vaccines containing inactivated Leptospira antigens, minimizing contact with contaminated water sources, maintaining proper sanitation in housing facilities, and controlling rodent populations."
+      }
+    ]
+  },
+
+    {
+      "disease": "Infectious Bovine Mastitis (IMB)",
+      "questions": [
+        {
+          "question": "What are the common symptoms of Infectious Bovine Mastitis (IMB) in cattle?",
+          "answer": "Common symptoms of Infectious Bovine Mastitis (IMB) in cattle include abnormal milk, such as clots, discoloration, or flakes, swelling, heat, and pain in the udder, and systemic signs like fever and depression."
+        },
+        {
+          "question": "How is Infectious Bovine Mastitis (IMB) in cattle typically treated?",
+          "answer": "Treatment of Infectious Bovine Mastitis (IMB) in cattle typically involves antibiotic therapy targeted at the specific pathogens involved, along with supportive care such as frequent milking, application of topical treatments, and maintaining proper hygiene."
+        },
+        {
+          "question": "What are the main causes of Infectious Bovine Mastitis (IMB) in cattle?",
+          "answer": "Infectious Bovine Mastitis (IMB) in cattle can be caused by a variety of bacterial pathogens, including Staphylococcus aureus, Streptococcus agalactiae, Escherichia coli, and others. Environmental factors such as poor hygiene and inadequate milking procedures can contribute to its development."
+        },
+        {
+          "question": "What measures can be taken to prevent Infectious Bovine Mastitis (IMB) in cattle?",
+          "answer": "Measures that can be taken to prevent Infectious Bovine Mastitis (IMB) in cattle include maintaining clean and dry housing conditions, practicing proper milking hygiene, regularly monitoring udder health, promptly treating any cases of mastitis, and implementing a comprehensive herd health management program."
+        }
+      ]
+    },
+    {
+      "disease": "Foot Rot",
+      "questions": [
+        {
+          "question": "What are the common symptoms of Foot Rot in cattle?",
+          "answer": "Common symptoms of Foot Rot in cattle include lameness, swelling, and inflammation of the foot, foul-smelling discharge, and reluctance to bear weight on the affected limb."
+        },
+        {
+          "question": "How is Foot Rot in cattle typically treated?",
+          "answer": "Treatment of Foot Rot in cattle typically involves cleaning and disinfecting the affected area, trimming overgrown hooves, and administering systemic or topical antibiotics to control infection. In severe cases, surgical debridement may be necessary."
+        },
+        {
+          "question": "What are the main causes of Foot Rot in cattle?",
+          "answer": "Foot Rot in cattle is commonly caused by the bacteria Fusobacterium necrophorum, which thrives in moist and dirty environments. Injury to the hoof, such as cuts or puncture wounds, provides an entry point for the bacteria."
+        },
+        {
+          "question": "What measures can be taken to prevent Foot Rot in cattle?",
+          "answer": "Measures that can be taken to prevent Foot Rot in cattle include maintaining clean and dry living conditions, providing proper hoof care, avoiding overcrowding, and implementing footbaths with disinfectant solutions to reduce bacterial contamination."
+        }
+      ]
+    },
+    {
+      "disease": "Bovine Spongiform Encephalopathy (BSE)",
+      "questions": [
+        {
+          "question": "What are the common symptoms of Bovine Spongiform Encephalopathy (BSE) in cattle?",
+          "answer": "Common symptoms of Bovine Spongiform Encephalopathy (BSE) in cattle include behavioral changes such as agitation or nervousness, difficulty walking or standing, loss of coordination, and progressive weight loss despite maintained appetite."
+        },
+        {
+          "question": "How is Bovine Spongiform Encephalopathy (BSE) in cattle typically diagnosed?",
+          "answer": "Bovine Spongiform Encephalopathy (BSE) in cattle is typically diagnosed postmortem through histopathological examination of brain tissue, which reveals characteristic spongiform changes. Rapid tests such as enzyme-linked immunosorbent assays (ELISAs) may also be used on live animals."
+        },
+        {
+          "question": "What are the main causes of Bovine Spongiform Encephalopathy (BSE) in cattle?",
+          "answer": "Bovine Spongiform Encephalopathy (BSE) in cattle is caused by prions, abnormal proteins that accumulate in the brain and cause neurodegeneration. The exact origin of BSE is believed to be the consumption of contaminated feed containing rendered remains of infected animals."
+        },
+        {
+          "question": "What measures can be taken to prevent Bovine Spongiform Encephalopathy (BSE) in cattle?",
+          "answer": "Measures that can be taken to prevent Bovine Spongiform Encephalopathy (BSE) in cattle include implementing strict feed bans to prevent the inclusion of ruminant-derived protein in cattle feed, surveillance programs to monitor for disease occurrence, and proper carcass disposal to prevent environmental contamination."
+        }
+      ]
+    },
+    
+      {
+        "disease": "Bovine Papillomatosis (Warts)",
+        "questions": [
+          {
+            "question": "What are the common symptoms of Bovine Papillomatosis (Warts) in cattle?",
+            "answer": "Common symptoms of Bovine Papillomatosis (Warts) in cattle include the development of wart-like growths on the skin, particularly in areas with friction or trauma, such as the head, neck, and udder."
+          },
+          {
+            "question": "How is Bovine Papillomatosis (Warts) in cattle typically treated?",
+            "answer": "Treatment of Bovine Papillomatosis (Warts) in cattle is usually not necessary, as the warts tend to regress spontaneously over time. However, in cases where warts cause discomfort or interfere with normal activities, they may be surgically removed or treated with topical medications."
+          },
+          {
+            "question": "What are the main causes of Bovine Papillomatosis (Warts) in cattle?",
+            "answer": "Bovine Papillomatosis (Warts) in cattle is caused by certain types of papillomaviruses, which infect the epithelial cells of the skin and mucous membranes. Transmission usually occurs through direct contact with infected animals or contaminated objects."
+          },
+          {
+            "question": "What measures can be taken to prevent Bovine Papillomatosis (Warts) in cattle?",
+            "answer": "Measures that can be taken to prevent Bovine Papillomatosis (Warts) in cattle include maintaining proper hygiene and sanitation to reduce the risk of viral transmission, avoiding contact with infected animals, and minimizing trauma or irritation to the skin."
+          }
+        ]
+      },
+      {
+        "disease": "Cryptosporidiosis",
+        "questions": [
+          {
+            "question": "What are the common symptoms of Cryptosporidiosis in cattle?",
+            "answer": "Common symptoms of Cryptosporidiosis in cattle include diarrhea, which may be profuse and watery, dehydration, weight loss, lethargy, and reduced appetite. Calves are particularly susceptible to severe disease."
+          },
+          {
+            "question": "How is Cryptosporidiosis in cattle typically treated?",
+            "answer": "Treatment of Cryptosporidiosis in cattle is primarily supportive and aimed at managing symptoms, such as providing oral rehydration therapy to correct dehydration, maintaining proper nutrition, and administering anti-diarrheal medications if necessary."
+          },
+          {
+            "question": "What are the main causes of Cryptosporidiosis in cattle?",
+            "answer": "Cryptosporidiosis in cattle is caused by Cryptosporidium spp., protozoan parasites that infect the epithelial cells of the intestines. Transmission occurs through ingestion of oocysts shed in the feces of infected animals."
+          },
+          {
+            "question": "What measures can be taken to prevent Cryptosporidiosis in cattle?",
+            "answer": "Measures that can be taken to prevent Cryptosporidiosis in cattle include maintaining clean and dry calf housing to reduce environmental contamination, providing clean drinking water, minimizing stress to prevent disease outbreaks, and practicing good hygiene and biosecurity measures."
+          }
+        ]
+      },
+      {
+        "disease": "Bovine Brucellosis",
+        "questions": [
+          {
+            "question": "What are the common symptoms of Bovine Brucellosis in cattle?",
+            "answer": "Common symptoms of Bovine Brucellosis in cattle include abortion in late gestation, retained fetal membranes, orchitis or epididymitis in bulls, reduced fertility, and occasional lameness due to joint infections."
+          },
+          {
+            "question": "How is Bovine Brucellosis in cattle typically diagnosed?",
+            "answer": "Bovine Brucellosis in cattle is typically diagnosed through serological tests, such as the Rose Bengal test or the complement fixation test, to detect antibodies against Brucella organisms. Culture and PCR tests may also be used to identify the bacteria."
+          },
+          {
+            "question": "What are the main causes of Bovine Brucellosis in cattle?",
+            "answer": "Bovine Brucellosis in cattle is caused by Brucella abortus bacteria, which primarily infect the reproductive tract of cattle and cause abortion. Transmission occurs through direct contact with infected fetal fluids, placental tissues, or uterine discharges."
+          },
+          {
+            "question": "What measures can be taken to prevent Bovine Brucellosis in cattle?",
+            "answer": "Measures that can be taken to prevent Bovine Brucellosis in cattle include vaccination of susceptible animals with Brucella abortus strain 19 (S19) or RB51 vaccine, maintaining strict biosecurity protocols, and preventing contact with wildlife reservoirs."
+          }
+        ]
+      },
+      
+        {
+          "disease": "Leptospirosis",
+          "questions": [
+            {
+              "question": "What are the common symptoms of Leptospirosis in cattle?",
+              "answer": "Common symptoms of Leptospirosis in cattle include fever, lethargy, loss of appetite, decreased milk production, jaundice, and in severe cases, kidney or liver failure."
+            },
+            {
+              "question": "How is Leptospirosis in cattle typically treated?",
+              "answer": "Treatment of Leptospirosis in cattle typically involves administration of antibiotics such as penicillin or oxytetracycline to eliminate the bacteria. Supportive care may also be provided to manage symptoms and prevent dehydration."
+            },
+            {
+              "question": "What are the main causes of Leptospirosis in cattle?",
+              "answer": "Leptospirosis in cattle is caused by various serovars of Leptospira bacteria, which are shed in the urine of infected animals and can survive in moist environments. Transmission occurs through contact with contaminated water or soil."
+            },
+            {
+              "question": "What measures can be taken to prevent Leptospirosis in cattle?",
+              "answer": "Measures that can be taken to prevent Leptospirosis in cattle include vaccination of susceptible animals with appropriate Leptospira serovars, minimizing contact with contaminated water sources, maintaining proper sanitation, and controlling rodent populations."
+            }
+          ]
+        },
+        {
+          "disease": "Epizootic Hemorrhagic Disease (EHD)",
+          "questions": [
+            {
+              "question": "What are the common symptoms of Epizootic Hemorrhagic Disease (EHD) in cattle?",
+              "answer": "Common symptoms of Epizootic Hemorrhagic Disease (EHD) in cattle include fever, lethargy, loss of appetite, lameness, respiratory distress, and hemorrhages in the mouth and other mucous membranes."
+            },
+            {
+              "question": "How is Epizootic Hemorrhagic Disease (EHD) in cattle typically treated?",
+              "answer": "Treatment of Epizootic Hemorrhagic Disease (EHD) in cattle is primarily supportive and symptomatic, involving administration of anti-inflammatory drugs, fluid therapy to prevent dehydration, and wound management for oral lesions."
+            },
+            {
+              "question": "What are the main causes of Epizootic Hemorrhagic Disease (EHD) in cattle?",
+              "answer": "Epizootic Hemorrhagic Disease (EHD) in cattle is caused by Orbiviruses transmitted by biting midges of the Culicoides genus. These midges are more active during warm weather conditions and are vectors for the virus."
+            },
+            {
+              "question": "What measures can be taken to prevent Epizootic Hemorrhagic Disease (EHD) in cattle?",
+              "answer": "Measures that can be taken to prevent Epizootic Hemorrhagic Disease (EHD) in cattle include vaccination of susceptible animals, implementing vector control measures to reduce midge populations, maintaining strict biosecurity to prevent disease introduction, and monitoring for clinical signs of infection."
+            }
+          ]
+        },
+        {
+          "disease": "Bovine Leukemia Virus (BLV)",
+          "questions": [
+            {
+              "question": "What are the common symptoms of Bovine Leukemia Virus (BLV) infection in cattle?",
+              "answer": "Common symptoms of Bovine Leukemia Virus (BLV) infection in cattle include persistent lymphocytosis, enlarged lymph nodes, decreased milk production, weight loss, and increased susceptibility to other infections."
+            },
+            {
+              "question": "How is Bovine Leukemia Virus (BLV) infection in cattle typically diagnosed?",
+              "answer": "Bovine Leukemia Virus (BLV) infection in cattle is typically diagnosed through serological tests such as enzyme-linked immunosorbent assay (ELISA) or agar gel immunodiffusion (AGID) tests to detect antibodies against the virus."
+            },
+            {
+              "question": "What are the main causes of Bovine Leukemia Virus (BLV) infection in cattle?",
+              "answer": "Bovine Leukemia Virus (BLV) infection in cattle is caused by the BLV retrovirus, which is transmitted through direct contact with infected blood, primarily during the transfer of colostrum from dam to calf or through contaminated needles."
+            },
+            {
+              "question": "What measures can be taken to prevent Bovine Leukemia Virus (BLV) infection in cattle?",
+              "answer": "Measures that can be taken to prevent Bovine Leukemia Virus (BLV) infection in cattle include routine testing of herds for BLV infection, culling of infected animals, maintaining closed herds, and minimizing blood transmission through proper needle disposal and equipment hygiene."
+            }
+          ]
+        },
+        
+          {
+            "disease": "Lumpy Skin Disease",
+            "questions": [
+              {
+                "question": "What are the common symptoms of Lumpy Skin Disease in cattle?",
+                "answer": "Common symptoms of Lumpy Skin Disease in cattle include fever, nodules or lumps on the skin, mucous membranes, and internal organs, decreased milk production, and general weakness."
+              },
+              {
+                "question": "How is Lumpy Skin Disease in cattle typically treated?",
+                "answer": "Treatment of Lumpy Skin Disease in cattle typically involves supportive care to relieve symptoms, such as providing analgesics and anti-inflammatory medications. There is no specific antiviral treatment available."
+              },
+              {
+                "question": "What are the main causes of Lumpy Skin Disease in cattle?",
+                "answer": "Lumpy Skin Disease in cattle is caused by the Lumpy Skin Disease virus, which belongs to the genus Capripoxvirus. It is primarily transmitted through insect vectors such as mosquitoes and biting flies."
+              },
+              {
+                "question": "What measures can be taken to prevent Lumpy Skin Disease in cattle?",
+                "answer": "Measures that can be taken to prevent Lumpy Skin Disease in cattle include vaccination of susceptible animals, implementing vector control measures to reduce fly populations, maintaining strict biosecurity to prevent disease introduction, and prompt treatment of affected animals."
+              }
+            ]
+          },
+          {
+            "disease": "Blue Tongue",
+            "questions": [
+              {
+                "question": "What are the common symptoms of Blue Tongue in cattle?",
+                "answer": "Common symptoms of Blue Tongue in cattle include fever, swollen and discolored tongue, excessive salivation, nasal discharge, lameness, and ulcerations on the oral mucosa."
+              },
+              {
+                "question": "How is Blue Tongue in cattle typically treated?",
+                "answer": "Treatment of Blue Tongue in cattle is primarily supportive and symptomatic, involving administration of anti-inflammatory drugs, fluid therapy to prevent dehydration, and wound management for oral ulcerations."
+              },
+              {
+                "question": "What are the main causes of Blue Tongue in cattle?",
+                "answer": "Blue Tongue in cattle is caused by the Blue Tongue virus, which is transmitted by certain species of Culicoides biting midges. These midges are more active during warm and humid weather conditions."
+              },
+              {
+                "question": "What measures can be taken to prevent Blue Tongue in cattle?",
+                "answer": "Measures that can be taken to prevent Blue Tongue in cattle include vaccination of susceptible animals, implementing vector control measures to reduce midge populations, maintaining strict biosecurity to prevent disease introduction, and monitoring for clinical signs of infection."
+              }
+            ]
+          },
+          
+            {
+              "disease": "Foot Rot",
+              "questions": [
+                {
+                  "question": "What are the common symptoms of Foot Rot in cattle?",
+                  "answer": "Common symptoms of Foot Rot in cattle include lameness, swelling, heat, and pain in the affected foot, foul odor, and eventual separation of the hoof from the underlying tissue."
+                },
+                {
+                  "question": "How is Foot Rot in cattle typically treated?",
+                  "answer": "Treatment of Foot Rot in cattle typically involves foot trimming to remove diseased tissue, topical application of antiseptic solutions or antibiotics, and providing clean and dry living conditions to facilitate healing."
+                },
+                {
+                  "question": "What are the main causes of Foot Rot in cattle?",
+                  "answer": "Foot Rot in cattle is primarily caused by bacterial pathogens such as Fusobacterium necrophorum and Dichelobacter nodosus, which thrive in moist and dirty environments and can enter the foot through wounds or softening of the hoof."
+                },
+                {
+                  "question": "What measures can be taken to prevent Foot Rot in cattle?",
+                  "answer": "Measures that can be taken to prevent Foot Rot in cattle include maintaining clean and dry living conditions, proper hoof trimming to prevent overgrowth and injury, implementing footbaths with antibacterial solutions, and promptly treating any signs of foot rot with appropriate medications."
+                }
+              ]
+            },
+            {
+              "disease": "Bovine Spongiform Encephalopathy (BSE)",
+              "questions": [
+                {
+                  "question": "What are the common symptoms of Bovine Spongiform Encephalopathy (BSE) in cattle?",
+                  "answer": "Common symptoms of Bovine Spongiform Encephalopathy (BSE) in cattle include behavioral changes (such as aggression or apprehension), difficulty in coordination, progressive weight loss, and eventually, inability to stand."
+                },
+                {
+                  "question": "How is Bovine Spongiform Encephalopathy (BSE) in cattle typically treated?",
+                  "answer": "There is no specific treatment for Bovine Spongiform Encephalopathy (BSE) in cattle. Infected animals are typically euthanized to prevent further suffering and to minimize the risk of disease transmission."
+                },
+                {
+                  "question": "What are the main causes of Bovine Spongiform Encephalopathy (BSE) in cattle?",
+                  "answer": "Bovine Spongiform Encephalopathy (BSE) in cattle is caused by the abnormal folding of prion proteins in the brain, leading to the formation of plaques and spongiform changes. The exact origin of the disease is not fully understood, but it is believed to be related to the consumption of contaminated feed."
+                },
+                {
+                  "question": "What measures can be taken to prevent Bovine Spongiform Encephalopathy (BSE) in cattle?",
+                  "answer": "Measures that can be taken to prevent Bovine Spongiform Encephalopathy (BSE) in cattle include implementing feed bans to prevent transmission of the infectious agent, surveillance programs to monitor for disease occurrence, and proper carcass disposal to prevent environmental contamination."
+                }
+              ]
+            },
+            
+              {
+                "disease": "Brucellosis",
+                "questions": [
+                  {
+                    "question": "What are the common symptoms of Brucellosis in cattle?",
+                    "answer": "Common symptoms of Brucellosis in cattle include abortion, stillbirths, weak calves, retained placenta, decreased milk production, and swollen joints."
+                  },
+                  {
+                    "question": "How is Brucellosis in cattle typically treated?",
+                    "answer": "Treatment of Brucellosis in cattle is not usually recommended due to the chronic nature of the disease and the potential for human transmission. Infected animals are typically culled to prevent disease spread."
+                  },
+                  {
+                    "question": "What are the main causes of Brucellosis in cattle?",
+                    "answer": "Brucellosis in cattle is primarily caused by Brucella abortus, a bacterium that can also infect other livestock species and humans. Transmission typically occurs through ingestion of contaminated materials or contact with infected reproductive fluids."
+                  },
+                  {
+                    "question": "What measures can be taken to prevent Brucellosis in cattle?",
+                    "answer": "Measures that can be taken to prevent Brucellosis in cattle include vaccination programs, routine testing and culling of infected animals, maintaining strict biosecurity protocols, and preventing contact with wildlife reservoirs to reduce the risk of disease transmission."
+                  }
+                ]
+              },
+              {
+                "disease": "Infectious Bovine Mastitis (IMB)",
+                "questions": [
+                  {
+                    "question": "What are the common symptoms of Infectious Bovine Mastitis (IMB) in cattle?",
+                    "answer": "Common symptoms of Infectious Bovine Mastitis (IMB) in cattle include swelling, heat, redness, and pain in the udder, abnormal milk appearance (such as clots, flakes, or discoloration), and systemic signs of illness (such as fever and lethargy)."
+                  },
+                  {
+                    "question": "How is Infectious Bovine Mastitis (IMB) in cattle typically treated?",
+                    "answer": "Treatment of Infectious Bovine Mastitis (IMB) in cattle typically involves antibiotic therapy targeted at the specific pathogens causing the infection, along with supportive care such as frequent milking and udder hygiene."
+                  },
+                  {
+                    "question": "What are the main causes of Infectious Bovine Mastitis (IMB) in cattle?",
+                    "answer": "Infectious Bovine Mastitis (IMB) in cattle is primarily caused by bacterial pathogens, including Staphylococcus aureus, Streptococcus agalactiae, Escherichia coli, and others. It can also be caused by environmental factors such as poor hygiene and improper milking practices."
+                  },
+                  {
+                    "question": "What measures can be taken to prevent Infectious Bovine Mastitis (IMB) in cattle?",
+                    "answer": "Measures that can be taken to prevent Infectious Bovine Mastitis (IMB) in cattle include maintaining strict milking hygiene practices, ensuring proper udder health management, regular udder health checks, and promptly treating any cases of mastitis with appropriate antibiotics."
+                  }
+                ]
+              },
+              
+                {
+                  "disease": "Bovine Viral Diarrhea (BVD)",
+                  "questions": [
+                    {
+                      "question": "What are the common symptoms of Bovine Viral Diarrhea (BVD) in cattle?",
+                      "answer": "Common symptoms of Bovine Viral Diarrhea (BVD) in cattle include fever, diarrhea, nasal discharge, oral ulcerations, and reproductive problems such as abortion or birth defects."
+                    },
+                    {
+                      "question": "How is Bovine Viral Diarrhea (BVD) in cattle typically treated?",
+                      "answer": "Treatment of Bovine Viral Diarrhea (BVD) in cattle is largely supportive, focusing on fluid therapy, nutritional support, and management of secondary infections. There are no specific antiviral treatments available."
+                    },
+                    {
+                      "question": "What are the main causes of Bovine Viral Diarrhea (BVD) in cattle?",
+                      "answer": "Bovine Viral Diarrhea (BVD) in cattle is caused by the Bovine Viral Diarrhea Virus (BVDV), which belongs to the Pestivirus genus. It is typically transmitted through direct contact with infected animals, ingestion of contaminated materials, or through the placenta from an infected dam to her fetus."
+                    },
+                    {
+                      "question": "What measures can be taken to prevent Bovine Viral Diarrhea (BVD) in cattle?",
+                      "answer": "Measures that can be taken to prevent Bovine Viral Diarrhea (BVD) in cattle include implementing biosecurity measures to prevent introduction of the virus to the herd, testing and culling persistently infected animals, maintaining closed herds, and minimizing contact with potentially infected cattle."
+                    }
+                  ]
+                },
+                {
+                  "disease": "Tuberculosis (TB)",
+                  "questions": [
+                    {
+                      "question": "What are the common symptoms of Tuberculosis (TB) in cattle?",
+                      "answer": "Common symptoms of Tuberculosis (TB) in cattle include weight loss, chronic cough, difficulty breathing, weakness, decreased milk production, and enlarged lymph nodes."
+                    },
+                    {
+                      "question": "How is Tuberculosis (TB) in cattle typically treated?",
+                      "answer": "Treatment of Tuberculosis (TB) in cattle is not recommended due to public health concerns and the difficulty in eradicating the disease from affected animals. Infected animals are typically culled to prevent transmission to other animals or humans."
+                    },
+                    {
+                      "question": "What are the main causes of Tuberculosis (TB) in cattle?",
+                      "answer": "Tuberculosis (TB) in cattle is caused by Mycobacterium bovis, a bacterium that can infect multiple species, including humans. It is typically transmitted through inhalation of respiratory droplets or ingestion of contaminated feed or water."
+                    },
+                    {
+                      "question": "What measures can be taken to prevent Tuberculosis (TB) in cattle?",
+                      "answer": "Measures that can be taken to prevent Tuberculosis (TB) in cattle include routine testing of cattle herds, movement restrictions, quarantine and culling of infected animals, maintaining biosecurity, and cooperation with regulatory authorities for disease eradication efforts."
+                    }
+                  ]
+                },
+                
+                  {
+                    "disease": "Blackleg",
+                    "questions": [
+                      {
+                        "question": "What are the common symptoms of Blackleg in cattle?",
+                        "answer": "Common symptoms of Blackleg in cattle include sudden death, lameness, swelling, and crepitus in the affected muscles."
+                      },
+                      {
+                        "question": "How is Blackleg in cattle typically treated?",
+                        "answer": "Treatment of Blackleg in cattle typically involves administration of antibiotics such as penicillin or oxytetracycline, along with supportive care to manage symptoms."
+                      },
+                      {
+                        "question": "What are the main causes of Blackleg in cattle?",
+                        "answer": "The main cause of Blackleg in cattle is infection with the bacterium Clostridium chauvoei, which is commonly found in the soil and can enter the body through wounds or ingestion."
+                      },
+                      {
+                        "question": "What measures can be taken to prevent Blackleg in cattle?",
+                        "answer": "Measures that can be taken to prevent Blackleg in cattle include vaccination against Clostridium chauvoei, proper carcass disposal to prevent spore transmission, maintaining proper nutrition and herd health to minimize stress, and prompt treatment of any suspected cases."
+                      }
+                    ]
+                  },
+                  {
+                    "disease": "Infectious Bovine Keratoconjunctivitis (IBK)",
+                    "questions": [
+                      {
+                        "question": "What are the common symptoms of Infectious Bovine Keratoconjunctivitis (IBK) in cattle?",
+                        "answer": "Common symptoms of Infectious Bovine Keratoconjunctivitis (IBK) in cattle include tearing, squinting, corneal cloudiness, and ulceration of the cornea."
+                      },
+                      {
+                        "question": "How is Infectious Bovine Keratoconjunctivitis (IBK) in cattle typically treated?",
+                        "answer": "Treatment of Infectious Bovine Keratoconjunctivitis (IBK) in cattle typically involves topical and systemic antibiotics, along with anti-inflammatory medications to reduce pain and inflammation."
+                      },
+                      {
+                        "question": "What are the main causes of Infectious Bovine Keratoconjunctivitis (IBK) in cattle?",
+                        "answer": "The main cause of Infectious Bovine Keratoconjunctivitis (IBK) in cattle is infection with the bacterium Moraxella bovis, which is commonly spread through direct contact or contaminated fomites."
+                      },
+                      {
+                        "question": "What measures can be taken to prevent Infectious Bovine Keratoconjunctivitis (IBK) in cattle?",
+                        "answer": "Measures that can be taken to prevent Infectious Bovine Keratoconjunctivitis (IBK) in cattle include implementing fly control measures to reduce irritation and transmission, isolating and treating affected animals, maintaining clean and dry bedding, and providing proper eye care to affected cattle."
+                      }
+                    ]
+                  },
+                  
+                    {
+                      "disease": "Anaplasmosis",
+                      "questions": [
+                        {
+                          "question": "What are the common symptoms of Anaplasmosis in cattle?",
+                          "answer": "Common symptoms of Anaplasmosis in cattle include fever, pale mucous membranes, jaundice, anemia, and weakness."
+                        },
+                        {
+                          "question": "How is Anaplasmosis in cattle typically treated?",
+                          "answer": "Treatment of Anaplasmosis in cattle typically involves administration of antibiotics such as oxytetracycline or long-acting tetracycline, along with supportive care to manage symptoms."
+                        },
+                        {
+                          "question": "What are the main causes of Anaplasmosis in cattle?",
+                          "answer": "The main cause of Anaplasmosis in cattle is infection with the Anaplasma marginale bacterium, which is transmitted through the bite of infected ticks or through contaminated blood transfer."
+                        },
+                        {
+                          "question": "What measures can be taken to prevent Anaplasmosis in cattle?",
+                          "answer": "Measures that can be taken to prevent Anaplasmosis in cattle include vector control measures to reduce tick populations, routine monitoring for clinical signs of infection, prompt treatment of affected animals with appropriate antibiotics, and implementing herd biosecurity practices to prevent disease spread."
+                        }
+                      ]
+                    },
+                    {
+                      "disease": "Trichomoniasis",
+                      "questions": [
+                        {
+                          "question": "What are the common symptoms of Trichomoniasis in cattle?",
+                          "answer": "Common symptoms of Trichomoniasis in cattle include infertility, early embryonic death, repeat breeding, and pyometra in females, and decreased libido and sperm motility in males."
+                        },
+                        {
+                          "question": "How is Trichomoniasis in cattle typically treated?",
+                          "answer": "Treatment of Trichomoniasis in cattle is challenging and often ineffective, as the protozoan parasite Tritrichomonas foetus resides deep within the reproductive tract. Culling of infected animals is the most common approach to control the disease."
+                        },
+                        {
+                          "question": "What are the main causes of Trichomoniasis in cattle?",
+                          "answer": "The main cause of Trichomoniasis in cattle is infection with the protozoan parasite Tritrichomonas foetus, which is sexually transmitted and primarily affects the reproductive tract."
+                        },
+                        {
+                          "question": "What measures can be taken to prevent Trichomoniasis in cattle?",
+                          "answer": "Measures that can be taken to prevent Trichomoniasis in cattle include routine testing of breeding bulls, implementing biosecurity protocols for new animal introductions, maintaining closed herds, and culling of infected animals to prevent disease spread within the herd."
+                        }
+                      ]
+                    },
+
+                      {
+                        "disease": "Bovine Respiratory Syncytial Virus (BRSV)",
+                        "questions": [
+                          {
+                            "question": "What are the common symptoms of Bovine Respiratory Syncytial Virus (BRSV) in cattle?",
+                            "answer": "Common symptoms of Bovine Respiratory Syncytial Virus (BRSV) in cattle include coughing, nasal discharge, fever, difficulty breathing, and decreased appetite."
+                          },
+                          {
+                            "question": "How is Bovine Respiratory Syncytial Virus (BRSV) in cattle typically treated?",
+                            "answer": "Treatment of Bovine Respiratory Syncytial Virus (BRSV) in cattle typically involves supportive care such as rest, hydration, and nutrition, along with administration of anti-inflammatory drugs and antibiotics to prevent secondary bacterial infections."
+                          },
+                          {
+                            "question": "What are the main causes of Bovine Respiratory Syncytial Virus (BRSV) in cattle?",
+                            "answer": "The main cause of Bovine Respiratory Syncytial Virus (BRSV) in cattle is infection with the BRSV virus, which is highly contagious and commonly spread through respiratory secretions."
+                          },
+                          {
+                            "question": "What measures can be taken to prevent Bovine Respiratory Syncytial Virus (BRSV) in cattle?",
+                            "answer": "Measures that can be taken to prevent Bovine Respiratory Syncytial Virus (BRSV) in cattle include vaccination of susceptible animals, minimizing stressors such as overcrowding and poor ventilation, and implementing biosecurity measures to prevent disease introduction and spread."
+                          }
+                        ]
+                      },
+                      {
+                        "disease": "Infectious Bovine Rhinotracheitis (IBR)",
+                        "questions": [
+                          {
+                            "question": "What are the common symptoms of Infectious Bovine Rhinotracheitis (IBR) in cattle?",
+                            "answer": "Common symptoms of Infectious Bovine Rhinotracheitis (IBR) in cattle include fever, nasal discharge, coughing, conjunctivitis, and reduced milk production."
+                          },
+                          {
+                            "question": "How is Infectious Bovine Rhinotracheitis (IBR) in cattle typically treated?",
+                            "answer": "Treatment of Infectious Bovine Rhinotracheitis (IBR) in cattle typically involves supportive care such as rest, hydration, and nutrition, along with administration of anti-inflammatory drugs and antibiotics to prevent secondary bacterial infections."
+                          },
+                          {
+                            "question": "What are the main causes of Infectious Bovine Rhinotracheitis (IBR) in cattle?",
+                            "answer": "The main cause of Infectious Bovine Rhinotracheitis (IBR) in cattle is infection with the bovine herpesvirus-1 (BoHV-1), which is highly contagious and commonly spread through respiratory secretions."
+                          },
+                          {
+                            "question": "What measures can be taken to prevent Infectious Bovine Rhinotracheitis (IBR) in cattle?",
+                            "answer": "Measures that can be taken to prevent Infectious Bovine Rhinotracheitis (IBR) in cattle include vaccination of susceptible animals, isolating and treating affected animals, implementing biosecurity measures to prevent disease spread, and optimizing herd immunity through management practices."
+                          }
+                        ]
+                      },
+                      {
+                        "disease": "Clostridial Diseases",
+                        "questions": [
+                          {
+                            "question": "What are the common symptoms of Clostridial Diseases in cattle?",
+                            "answer": "Common symptoms of Clostridial Diseases in cattle include sudden death, fever, diarrhea, abdominal pain, and muscle tremors."
+                          },
+                          {
+                            "question": "How are Clostridial Diseases in cattle typically treated?",
+                            "answer": "Treatment of Clostridial Diseases in cattle typically involves administration of antitoxins, antibiotics, and supportive care such as fluid therapy and electrolyte replacement."
+                          },
+                          {
+                            "question": "What are the main causes of Clostridial Diseases in cattle?",
+                            "answer": "The main causes of Clostridial Diseases in cattle are infection with various Clostridium species, which are ubiquitous in the environment and can proliferate rapidly under certain conditions."
+                          },
+                          {
+                            "question": "What measures can be taken to prevent Clostridial Diseases in cattle?",
+                            "answer": "Measures that can be taken to prevent Clostridial Diseases in cattle include vaccination against common pathogens such as Clostridium perfringens and Clostridium tetani, maintaining proper sanitation to minimize spore exposure, and prompt treatment of any suspected cases."
+                          }
+                        ]
+                      },
+                      
+                      {
+                        "disease": "Salmonellosis",
+                        "questions": [
+                          {
+                            "question": "What are the common symptoms of Salmonellosis in cattle?",
+                            "answer": "Common symptoms of Salmonellosis in cattle include diarrhea, fever, loss of appetite, dehydration, and abdominal pain."
+                          },
+                          {
+                            "question": "How is Salmonellosis in cattle typically treated?",
+                            "answer": "Treatment of Salmonellosis in cattle typically involves supportive care such as fluid therapy, electrolyte replacement, and anti-inflammatory drugs, along with administration of antibiotics to target the Salmonella bacteria."
+                          },
+                          {
+                            "question": "What are the main causes of Salmonellosis in cattle?",
+                            "answer": "The main cause of Salmonellosis in cattle is infection with Salmonella bacteria, which can be transmitted through contaminated feed, water, or contact with infected animals or their feces."
+                          },
+                          {
+                            "question": "What measures can be taken to prevent Salmonellosis in cattle?",
+                            "answer": "Measures that can be taken to prevent Salmonellosis in cattle include maintaining clean and hygienic living conditions, providing access to clean water and uncontaminated feed, implementing biosecurity measures to prevent disease introduction, and vaccination of susceptible animals."
+                          }
+                        ]
+                      },
+                      {
+                        "disease": "Clostridial Diseases",
+                        "questions": [
+                          {
+                            "question": "What are the common symptoms of Clostridial Diseases in cattle?",
+                            "answer": "Common symptoms of Clostridial Diseases in cattle include sudden death, fever, diarrhea, abdominal pain, and muscle tremors."
+                          },
+                          {
+                            "question": "How are Clostridial Diseases in cattle typically treated?",
+                            "answer": "Treatment of Clostridial Diseases in cattle typically involves administration of antitoxins, antibiotics, and supportive care such as fluid therapy and electrolyte replacement."
+                          },
+                          {
+                            "question": "What are the main causes of Clostridial Diseases in cattle?",
+                            "answer": "The main causes of Clostridial Diseases in cattle are infection with various Clostridium species, which are ubiquitous in the environment and can proliferate rapidly under certain conditions."
+                          },
+                          {
+                            "question": "What measures can be taken to prevent Clostridial Diseases in cattle?",
+                            "answer": "Measures that can be taken to prevent Clostridial Diseases in cattle include vaccination against common pathogens such as Clostridium perfringens and Clostridium tetani, maintaining proper sanitation to minimize spore exposure, and prompt treatment of any suspected cases."
+                          }
+                        ]
+                      }
+                      ]
+
+                
+
+                  
+
+                
+              
+              
+            
+          
+          
+        
+        
+      
+      
+    
+    
+  
+  
+
+
+  
+

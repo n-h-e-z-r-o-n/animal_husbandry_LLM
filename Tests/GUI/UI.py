@@ -1,7 +1,6 @@
 # pip install pyspellchecker
 # pip install pillow
-# pip install ctypes
-# pip install io
+
 # ========================================================= Required Imports  =============================================================
 
 import tkinter as tk
@@ -14,6 +13,7 @@ import re
 import Retrieval_Augmented_Generation
 import llm_inference
 from spellchecker import SpellChecker
+
 
 # ========================================================= Functions =====================================================================
 # ========================================================= Global Variables  =============================================================
@@ -79,6 +79,8 @@ def ask_binary_choice():
 
 
 def Request_Info(user_query): #
+    print("seraching")
+
     global display
     if display == 0:
         display_hide_chats()
@@ -105,9 +107,7 @@ def Request_Info(user_query): #
         QUERY_BT.config(text="▫▫▫▫", fg="white")
 
         if model_no == 1:
-            answer = llm_inference.llm_chain.invoke(input=f"{user_query}")
-            answer = answer['text']
-            # answer = llm_inference.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
+            answer = llm_inference.llm_chain.run(Instruction=str(f"respond to this: {user_query}"))
         else:
             answer = Retrieval_Augmented_Generation.LLM_Run(str(user_query))
 
@@ -123,6 +123,7 @@ def Request_Info(user_query): #
 
 def display_hide_chats():
     global VIEW_BOX, D_HIDE, display
+    print("change", display)
     if display == 0:
         D_HIDE.config(text="<")
         VIEW_BOX.place(relx=0, rely=0, relheight=1, relwidth=1)
@@ -228,6 +229,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    import os
-    current_file_name = os.path.basename(__file__)
-    os.remove(current_file_name)

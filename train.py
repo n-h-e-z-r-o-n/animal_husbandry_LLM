@@ -11,8 +11,8 @@ from langchain.llms import GradientLLM
 from langchain.prompts import PromptTemplate
 
 # Set the environment variables for gradient.ai using your access token and workspace ID
-os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J4"
-os.environ['GRADIENT_WORKSPACE_ID'] = "b04a475d-65d1-4e98-82f2-62d218be3989_workspace4"
+os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J"
+os.environ['GRADIENT_WORKSPACE_ID'] = "1b99bbdd-1360-4321-a152-fc8822334cd0_workspace"
 
 # ========================== LOADING THE DATASET AND DIVIDING IT INTO CHUNKS =====================================================
 
@@ -32,42 +32,38 @@ def divide_into_chunks(number, chunk_size):  # Define a function to divide a num
 with open("./DataSet/data.json") as f:  # Load the dataset from a JSON file
     samples = json.load(f)
 
-chunks = divide_into_chunks(len(samples), 100)  # Divide the dataset into chunks of 100 samples each
-print(chunks)
+
+Batches = divide_into_chunks(len(samples), 100)  # Divide the dataset into chunks of 100 samples each
+print(Batches)
 
 # =============================== FINE TUNING THE MODEL ============================================================================
 
 # Create a Gradient object to interact with gradient.ai
-
-
-
-
 with Gradient() as gradient:
-    base_model = gradient.get_base_model(base_model_slug="nous-hermes2")
+    base_model = gradient.get_base_model(base_model_slug="nous-hermes2") # base model Nous-Hermes-Llama2-13b
     new_model_adapter = base_model.create_model_adapter(
-        name="Animal_husbandry-LLM(hezron)",
+        name="Llama2-13b/Animal_Husbandry",
         learning_rate=0.00005,
-        rank=8,
+        rank=8
     )
 
     print(f"Created model adapter with id {new_model_adapter.id}")
-    num_epochs = 3  # num_epochs is the number of times you fine-tune the model # more epochs tends to get better results, but you also run the risk of "overfitting"
+    num_epochs = 1  # num_epochs is the number of times you fine-tune the model # more epochs tends to get better results, but you also run the risk of "overfitting"
     count = 0
     while count < num_epochs:
         print(f"Fine-tuning the model, iteration {count + 1}")
         s = 0
         n = 1
-        for i in chunks:
+        for Batch in Batches:
             print(f"chunk {n} range: {s} : {(s + i)}")
             while True:
                 try:  # Try to fine-tune the model with the chunk of samples, If an error occurs, retry
-
-                    new_model_adapter.fine_tune(samples=samples[s: (s + i)])
-   
+                    metric = new_model_adapter.fine_tune(samples=samples[s: (s + Batch)])
+                    print(f"\n Batch {n} Evaluation :", metric)
                     break
                 except:
                     pass
-            s += i
+            s += Batch
             n += 1
         count = count + 1
 
@@ -84,6 +80,6 @@ template = "### Instruction: {Instruction} \n\n### Response:"
 prompt = PromptTemplate(template=template, input_variables=["Instruction"])
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
-question = "Discuss the role of nutrition in animal husbandry"
+question = "What types of car batteries do you offer?"
 answer = llm_chain.run(Instruction=question)
 print(answer)

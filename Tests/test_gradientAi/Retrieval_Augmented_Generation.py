@@ -13,6 +13,7 @@ import os
 
 os.environ['GRADIENT_ACCESS_TOKEN'] = "1vhvNKf2lLAMPvrOqhV97xaPPNRzwT1J"
 os.environ['GRADIENT_WORKSPACE_ID'] = "1b99bbdd-1360-4321-a152-fc8822334cd0_workspace"
+fine_tuned_Model_Id = "227859f1-11c4-41f9-ac14-31a287e1467a_model_adapter"
 
 document_store = InMemoryDocumentStore()
 writer = DocumentWriter(document_store=document_store)
@@ -41,7 +42,7 @@ text_embedder = GradientTextEmbedder(
     workspace_id=os.environ["GRADIENT_WORKSPACE_ID"],
 )
 
-fine_tuned_Model_Id = "4e3d96df-8ba6-4fa6-8e26-1523d2f096d2_model_adapter"
+
 
 generator = GradientGenerator(
     access_token=os.environ["GRADIENT_ACCESS_TOKEN"],
@@ -84,5 +85,5 @@ def LLM_Run(question):
     return result["answer_builder"]["answers"][0].data
 
 
-#Query = "What is animal husbandry??"
-# print(LLM_Run(Query))
+Query = "When is diarrhoea very risky???"
+print(LLM_Run(Query))

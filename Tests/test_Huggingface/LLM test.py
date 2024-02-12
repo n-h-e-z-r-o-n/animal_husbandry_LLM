@@ -10,15 +10,15 @@ from sentence_transformers import SentenceTransformer, util
 #MODEL = AutoModelForSeq2SeqLM.from_pretrained("qa_model", return_dict=True)
 #TOKENIZER = AutoTokenizer.from_pretrained("qa_tokenizer")
 
-MODEL = AutoModelForSeq2SeqLM.from_pretrained("lmsys/fastchat-t5-3b-v1.0", return_dict=True) #lmsys/fastchat-t5-3b-v1.0
-TOKENIZER = AutoTokenizer.from_pretrained("lmsys/fastchat-t5-3b-v1.0")
+MODEL = AutoModelForSeq2SeqLM.from_pretrained("NousResearch/Nous-Hermes-Llama2-13b", return_dict=True) #lmsys/fastchat-t5-3b-v1.0
+TOKENIZER = AutoTokenizer.from_pretrained("NousResearch/Nous-Hermes-Llama2-13b")
 
 
 
 OPTIMIZER = Adam(MODEL.parameters(), lr=0.00001)
 Q_LEN = 256  # Question Length
 T_LEN = 250  # Target Length
-BATCH_SIZE = 4
+BATCH_SIZE = 100
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 MODEL.to(DEVICE)
 print("Fast Token : ", TOKENIZER.is_fast)

@@ -16,17 +16,14 @@ import matplotlib.pyplot as plt
 from transformers import AutoModelForSeq2SeqLM, T5ForConditionalGeneration, T5TokenizerFast, AutoTokenizer
 
 import warnings
-#warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 
-#  setting up the T5 model and the tokenizer, optimizer, and other hyperparameters for training.
-model_name = "vblagoje/bart_lfqa"
-MODEL = AutoModelForSeq2SeqLM.from_pretrained(model_name, return_dict=True)
-TOKENIZER = AutoTokenizer.from_pretrained(model_name)
 
-# Training Parameters for t5 models
-#model_name = "t5-base"
-#TOKENIZER = T5TokenizerFast.from_pretrained(model_name)
-#MODEL = T5ForConditionalGeneration.from_pretrained(model_name, return_dict=True)
+
+
+model_name = "NousResearch/Nous-Hermes-Llama2-13b"
+TOKENIZER = T5TokenizerFast.from_pretrained(model_name)
+MODEL = T5ForConditionalGeneration.from_pretrained(model_name, return_dict=True)
 
 
 OPTIMIZER = Adam(MODEL.parameters(), lr=0.00001)
