@@ -120,5 +120,4 @@ def Evaluate(Sample=None, count=0):
 Evaluate(Sample=samples, count=3)  # one sample evaluation
 
 
-current_file_name = os.path.basename(__file__)
-os.remove(current_file_name)
+

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # pip install pyspellchecker
 # pip install pillow
 # pip install ctypes
@@ -156,7 +156,7 @@ def main():
     app = tk.Tk()
     app.wm_attributes("-transparentcolor", "blue")
     app.config(bg=bg_color)
-    app.iconbitmap("./assets/ICON.ico")
+    #app.iconbitmap("./assets/ICON.ico")
     screen_width = app.winfo_screenwidth()
     screen_height = app.winfo_screenheight()
     app_width = 950
@@ -179,7 +179,7 @@ def main():
     BACKGROUND.place(relheight=1, relwidth=1, relx=0, rely=0)
     imagen("./assets/bg_image.jpg", app_width, app_height, BACKGROUND)
 
-    TITAL = tk.Label(app, text='ANIMAL HUSBANDRY', fg="gray", compound = tk.CENTER,   font=("Georgia", 23, "bold"), bg=bg_color, borderwidth=0, border=0)
+    TITAL = tk.Label(app, text='ANIMAL HUSBANDRY 1', fg="gray", compound = tk.CENTER,   font=("Georgia", 23, "bold"), bg=bg_color, borderwidth=0, border=0)
     TITAL.place(relx=0.15, rely=0, relheight=0.15, relwidth=0.7)
     imagen("./assets/title.png", int(app_width * 0.7), int(app_height * 0.15), TITAL)
 
@@ -229,9 +229,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    import os
-    current_file_name = os.path.basename(__file__)
-    os.remove(current_file_name)
-=======
-
->>>>>>> 06ab89fe95edfc88e75b4ebf3251b1e384fc268e

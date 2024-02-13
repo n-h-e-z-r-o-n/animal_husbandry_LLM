@@ -4,8 +4,8 @@ from gradient_haystack.embedders.gradient_text_embedder import GradientTextEmbed
 from gradient_haystack.generator.base import GradientGenerator
 from haystack import Document, Pipeline
 from haystack.components.writers import DocumentWriter
-from haystack.document_stores.in_memory.document_store import InMemoryDocumentStore
-from haystack.components.retrievers.in_memory.embedding_retriever import InMemoryEmbeddingRetriever
+from haystack.document_stores.in_memory import InMemoryDocumentStore
+from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever
 from haystack.components.builders import PromptBuilder
 from haystack.components.builders.answer_builder import AnswerBuilder
 import os
@@ -84,11 +84,7 @@ def LLM_Run(question):
     return result["answer_builder"]["answers"][0].data
 
 
-#Query = "When is diarrhoea very risky???"
-#print(LLM_Run(Query))
+Query = "I noticed some unusual lumps or swellings on one of my cows. Should I be worried?"
+print(LLM_Run(Query))
 
 
-
-
-current_file_name = os.path.basename(__file__)
-os.remove(current_file_name)
