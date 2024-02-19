@@ -14,15 +14,6 @@ install:
 !pip install -U langchain
 ```
 
-# Gradient.ai
-Gradient.ai is a platform that enables businesses to build, customize, and launch AI solutions from a single platform. Its key features include:
-- Fine-tuning and inference web API: This allows you to easily personalize and build on open-source LLMs by fine-tuning them on your data and generating completions.
-- Private model instances: You can create a private instance of a base model and instruct it on your data to see how it learns in real-time.
-- Domain-specific LLMs: Gradient offers pre-trained LLMs specific to various industries, including healthcare, finance, and insurance.
-- Accelerator Blocks: These pre-built components allow you to easily integrate AI into your business workflows without needing complex infrastructure setup.
-- Customizable APIs: You can access Gradient's functionalities through native CLI, Python, and Javascript SDKs for seamless integration.
-
-
 
 learn more about gradient ai: [link](https://gradient.ai/) \
 learn more about gradient_Haystack: [link](https://docs.gradient.ai/docs/haystack) \
