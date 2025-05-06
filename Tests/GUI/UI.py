@@ -12,7 +12,6 @@ import base64
 import re
 import Retrieval_Augmented_Generation
 import llm_inference
-from spellchecker import SpellChecker
 
 
 # ========================================================= Functions =====================================================================
@@ -26,7 +25,6 @@ shift_scroll = 0
 grid_widgets = []
 model_no = 1
 display = 0
-spell = SpellChecker()
 
 
 # ========================================================= Functions =====================================================================
@@ -134,16 +132,6 @@ def display_hide_chats():
         display = 0
 
 
-def check_spelling(user_query):
-    global INDICATOR
-    INDICATOR.config(bg="green")
-    user_query = user_query.split()
-
-    last_string = re.sub(r'[,\.\?\!\:\;\"\'\`]', '', user_query[-1])
-    misspelled = spell.unknown([last_string])
-    for word in misspelled:
-        INDICATOR.config(bg="red")
-
 
 # ========================================================= Main Function =================================================================
 
@@ -203,7 +191,6 @@ def main():
     QUERY_ENTRY = tk.Entry(app, bg=of_c, fg="gray", insertbackground='white', justify=tk.CENTER, font=("Courier New", 12, "italic"), borderwidth=0, border=0)
     QUERY_ENTRY.place(relx=0.05, rely=0.92, relwidth=0.9, relheight=0.07)
     QUERY_ENTRY.bind("<Return>", lambda e: Request_Info(QUERY_ENTRY.get()))
-    QUERY_ENTRY.bind("<KeyRelease>", lambda e: check_spelling(QUERY_ENTRY.get()))
 
     QUERY_BT = tk.Button(app, bg=bg_color,   activebackground=bg_color, compound = tk.CENTER, fg="white", text="►", font=("BOLD", 13), borderwidth=0, border=0, command=lambda: Request_Info(QUERY_ENTRY.get()))
     QUERY_BT.place(relx=0.965, rely=0.92, relheight=0.07, relwidth=0.03)
