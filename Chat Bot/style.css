@@ -121,8 +121,9 @@ body , html {
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
+    flex-direction: column;
+
   background: brown;
-  display: flex;
 }
 
 .chat_history{
