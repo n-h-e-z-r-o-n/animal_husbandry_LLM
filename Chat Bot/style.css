@@ -138,7 +138,8 @@ body , html {
 }
 .chat_input{
    border-radius: 20px;
-   width: 80%;
+   border: none;
+   width: 73%;
    min-height: 60px;
    background: green;
    margin-left: auto;
@@ -146,9 +147,16 @@ body , html {
    resize: none;
    overflow-y: hidden;
    padding: 10px;
+               font-size: 14px;
                line-height: 1.5;
-}
+               font-family: Arial, sans-serif;
 
+
+}
+.chat_input:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+        }
 /*=========================================    SMALL DEVICES    ======================================================*/
 
 
