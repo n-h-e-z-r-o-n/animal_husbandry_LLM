@@ -55,17 +55,18 @@ body , html {
 }
 
 .Logo_nav{
-
+  flex: 1;
 }
 .Toggol_nav{
-
+  flex: 1;
 }
 .chat_nave{
-
+   flex: 1;
 }
 .profile_nav{
+  flex: 1;
   margin-top: auto;
-  
+  background: green;
 }
 
 
