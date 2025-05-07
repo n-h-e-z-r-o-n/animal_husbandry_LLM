@@ -145,6 +145,8 @@ body , html {
    margin-right: auto;
    resize: none;
    overflow-y: hidden;
+   padding: 10px;
+               line-height: 1.5;
 }
 
 /*=========================================    SMALL DEVICES    ======================================================*/
