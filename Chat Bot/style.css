@@ -135,9 +135,17 @@ body , html {
    overflow: scroll;
 }
 .received_m{
+         max-width: 70%;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 18px;
+            position: relative;
+            word-wrap: break-word;
+            line-height: 1.4;
+}
+.sent_m{
 
 }
-.
 .chat_input{
    border-radius: 20px;
    border: none;
