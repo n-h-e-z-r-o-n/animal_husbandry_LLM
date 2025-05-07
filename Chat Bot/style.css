@@ -121,12 +121,14 @@ body , html {
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
+  background: brown;
 }
 
 .chat_history{
    background: blue;
    width: 70%;
    height: 80%;
+   margin: auto
 }
 
 
